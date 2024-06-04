@@ -88,6 +88,14 @@ h4 {
     margin-right: 3%;
 }
 
+h5 {
+    font-size: 1.5em;
+    line-height: 0em;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--txt2);
+}
+
 strong {
     color: var(--txt2);
 }
