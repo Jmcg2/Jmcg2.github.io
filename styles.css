@@ -90,7 +90,7 @@ h4 {
 
 h5 {
     font-size: 1.5em;
-    line-height: 0em;
+    line-height: 0.5em;
     font-weight: bolder;
     text-align: center;
     color: var(--txt2);
@@ -132,7 +132,8 @@ div {
     display: inline;
     position: static;
     text-align: center;
-    margin: auto;
+    height: 50%;
+    padding: 25%;
 }
 
 .footer {
@@ -144,7 +145,7 @@ div {
 }
 
 .sectHead {
-    text-shadow: 2px 2px 4px var(--acnt);
+    text-shadow: 1px 1px 3px var(--acnt);
 }
 
 .lang {
