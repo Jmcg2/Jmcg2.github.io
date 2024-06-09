@@ -1,12 +1,10 @@
 :root {
-    --bg: #BABAB5;
-    --card: #f7f7f7;
+    --bg: #D1B68F;
+    --card: #FFFCE8;
     --primary: #19323c;
-    --acnt1: #5F1A37;
-    --acnt2: #F4D35E;
-    --acnt3: #401225;
-    --disabled: #716a6a;
-    
+    --acnt1: #6f1f41;
+    --acnt2: #A27035;
+    --acnt3: #401225;    
 }
 
 body {
@@ -169,7 +167,7 @@ div {
 .dot2 {
     height: 1.124rem;
     width: 1.124rem;
-    background-color: var(--disabled);
+    background-color: var(--acnt2);
     border-radius: 50%;
     display: inline-block;
     margin: 10% 1.5%;
