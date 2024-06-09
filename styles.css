@@ -1,10 +1,12 @@
 :root {
-    --bg: 	#d9e5ff;
-    --txt1: #010101;
-    --txt2: #3664f5;
-    --acnt: #6699ff;
-    --acnt2: #716a6a;
-    --content: #f7f7f7;
+    --bg: #BABAB5;
+    --card: #f7f7f7;
+    --primary: #19323c;
+    --acnt1: #5F1A37;
+    --acnt2: #F4D35E;
+    --acnt3: #401225;
+    --disabled: #716a6a;
+    
 }
 
 body {
@@ -12,9 +14,9 @@ body {
     width: 900px;
     display: flexbox;
     margin: auto;
-    color: var(--txt1);
+    color: var(--primary);
     line-height: 1.3;
-    font-family: "Roboto Condensed", monospace;
+    font-family: "Courier New", "Roboto Condensed", monospace;
 }
 
 img{
@@ -27,12 +29,12 @@ img{
 
 .button-63 {
   align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  background-image: linear-gradient(144deg,var(--acnt3), var(--acnt1),var(--acnt2));
   border: 0;
   border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-shadow: --var(--acnt2) 0 15px 30px -5px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: var(--card);
   display: flex;
   font-size: 20px;
   justify-content: center;
@@ -56,33 +58,33 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 2px solid var(--acnt);
-    box-shadow: 2px 2px 10px var(--acnt);
+    border-top: 2px solid var(--acnt2);
+    box-shadow: 2px 2px 10px var(--acnt2);
     margin: 2% 8%;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-weight: bolder;
     text-align: center;
-    color: var(--txt2);
+    color: var(--acnt1);
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: bold;
     text-align: center;
-    color: var(--txt2);
+    color: var(--acnt1);
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.0625rem;
     font-weight: normal;
     text-align: center;
 }
 
 h4 {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     font-weight: normal;
     text-align: center;
     margin-right: 3%;
@@ -93,17 +95,18 @@ h5 {
     line-height: 0.5em;
     font-weight: bolder;
     text-align: center;
-    color: var(--txt2);
+    color: var(--acnt1);
 }
 
 strong {
-    color: var(--txt2);
+    color: var(--acnt1);
 }
 
 p {
-    font-size: 1.125rem;
+    font-size: 1.025rem;
     font-weight: normal;
     text-align: left;
+    font-kerning: normal;
 }
 
 div {
@@ -118,8 +121,8 @@ div {
     transition: all 0.3s ease;
     display: inline-block;
     border-radius: 15px;
-    background: var(--content);
-    box-shadow: var(--acnt) 3px 3px 5px;
+    background: var(--card);
+    box-shadow: var(--acnt3) 3px 3px 5px;
 }
 
 .icon{
@@ -141,11 +144,11 @@ div {
     font-weight: 700;
     font-style: italic;
     font-size: 1.125rem;
-    color: var(--txt2);
+    color: var(--acnt1);
 }
 
 .sectHead {
-    text-shadow: 1px 1px 3px var(--acnt);
+    text-transform: uppercase;
 }
 
 .lang {
@@ -157,7 +160,7 @@ div {
 .dot {
     height: 1.124rem;
     width: 1.124rem;
-    background-color: var(--acnt);
+    background-color: var(--acnt3);
     border-radius: 50%;
     display: inline-block;
     margin: 10% 1.5%;
@@ -166,7 +169,7 @@ div {
 .dot2 {
     height: 1.124rem;
     width: 1.124rem;
-    background-color: var(--acnt2);
+    background-color: var(--disabled);
     border-radius: 50%;
     display: inline-block;
     margin: 10% 1.5%;
