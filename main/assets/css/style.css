@@ -124,13 +124,6 @@ ul {
     list-style: none;
 }
 
-.backer {
-    background-color: white;
-    width: fit-content;
-    padding: 1% 5%;
-    margin: auto;
-}
-
 blockquote,
 q {
     quotes: none;
@@ -159,8 +152,8 @@ select {
 }
 
 #toggle {
-    position: fixed;
-    right: 15px;
+    position: absolute;
+    right: 20px;
     top: -5px;
 }
 
@@ -174,7 +167,7 @@ select {
     height: 24px;
     border-radius: 50px;
     position: relative;
-    padding: 3px;
+    padding: 5px 2px;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -187,7 +180,7 @@ select {
 }
 
 .checkbox-label .ball {
-    background-color: #fff;
+    background-color: var(--color-accent);
     width: 24px;
     height: 24px;
     left: -1%;
