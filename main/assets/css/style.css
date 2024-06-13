@@ -7270,27 +7270,7 @@ i {
 
     @media (max-width: 600px) {
         :root {
-            --text-base-size: 0.7em;
-            --text-scale-ratio: 1.2;
-            --text-xs: calc(
-                (1em / var(--text-scale-ratio)) / var(--text-scale-ratio)
-            );
-            --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
-            --text-md: calc(var(--text-sm) * var(--text-scale-ratio));
-            --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
-            --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
-            --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
-            --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
-            --body-line-height: 1.4;
-            --heading-line-height: 1.2;
-            --font-primary-capital-letter: 0.75;
-            --font-secondary-capital-letter: 0.75;
-        }
-    }
-
-    @media (max-width: 450px) {
-        :root {
-            --text-base-size: 0.4em;
+            --text-base-size: 0.8em;
             --text-scale-ratio: 1.2;
             --text-xs: calc(
                 (1em / var(--text-scale-ratio)) / var(--text-scale-ratio)
