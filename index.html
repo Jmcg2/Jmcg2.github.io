@@ -11,18 +11,11 @@
 <body>
 
     <main class="padding-y-xs" id="top">
-        
-    <div id="toggle">
-        <input type="checkbox" class="checkbox" id="checkbox">
-        <label for="checkbox" class="checkbox-label">
-            <i class="fas fa-sun"></i>
-            <i class="fas fa-moon"></i>
-            <span class="ball"></span>
-        </label>
-    </div>
       
     <div class="container max-width-adaptive-sm margin-bottom-lg">
-      <div class="text-component padding-md text-center">
+      <div class="text-component width-100% padding-md text-center">
+        <a class="btn btn--accent" id="toggle" onclick="lightDark()"><i class="fa fa-adjust" aria-hidden="true"></i><i class="fa fa-sun" id="toggle-backer" aria-hidden="true"></i></a>
+        
         <h2 class="text-xxxl" id="top">James McGoldrick</h2>
         <h2 class="text-xxl">Cyber Operations Professional</h2>
         <br>
@@ -35,7 +28,7 @@
         <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
           <div class="grid">
             <div class="col-7 flex items-center height-100%">
-              <div class="text-component padding-md">
+              <div class="text-component width-100% padding-md">
                 <!--<img class="icon icon--xxl" src="/main/assets/img/icon2.png"/>-->  
                 <h2 class="text-xl">Background</h2><br>
                 <p class="text-sm">Highly skilled veteran and professional experienced in
@@ -47,7 +40,7 @@
                     striving for perfection.</p>
                 <p><a href="https://drive.google.com/file/d/1urNe3Ck4sVJ5oLN4_zQ_L9u4Ehqb322L/view?usp=sharing" class="btn btn--primary">Download CV</a></p>
                 </div>
-                <a class="nextCard btn--accent" id="toNext" onclick="smoothScrollTo('toNext')"><strong>&gt;</strong></a>
+                <a class="nextCard" id="toNext" onclick="smoothScrollTo('toNext')"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
             </div>
 
             <div class="col-5 height-100%">
@@ -59,13 +52,13 @@
         <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
           <div class="grid">
             <div class="col-7 flex items-center height-100%">
-              <div class="text-component padding-md">
+              <div class="text-component width-100% padding-md">
                 <!--<img class="icon icon--xxl" src="/main/assets/img/icon3.png"/>--> 
                 <h2 class="text-xl">Education</h2><br>
                   <p class="text-sm"><strong>B.S. in Computer Science</strong> from the <strong>United States Air Force Academy</strong><i> - May 2022</i></p>
                   <p class="text-sm"><strong>M.S. in Computer Security and Information Assurance</strong> from the <strong>Western Governor's University</strong><i> - In Progress</i></p>
               </div>
-              <a class="nextCard btn--accent" id="toNext2" onclick="smoothScrollTo('toNext2')"><strong>&gt;</strong></a>
+              <a class="nextCard  " id="toNext2" onclick="smoothScrollTo('toNext2')"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
             </div>
 
             <div class="col-5 height-100%">
@@ -77,7 +70,7 @@
         <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
           <div class="grid">
             <div class="col-7 flex items-center height-100%">
-              <div class="text-component padding-md">
+              <div class="text-component width-100% padding-md">
                 <!--<img class="icon icon--xxl" src="/main/assets/img/icon4.png"/>-->
                 <h2 class="text-xl">Assignments</h2><br>
                   
@@ -97,7 +90,7 @@
                     Undergraduate Cyber Warfare Training</p>
                   
               </div>
-              <a class="nextCard btn--accent" id="toNext3" onclick="smoothScrollTo('toNext3')"><strong>&gt;</strong></a>
+              <a class="nextCard  " id="toNext3" onclick="smoothScrollTo('toNext3')"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
             </div>
 
             <div class="col-5 height-100%">
@@ -109,7 +102,7 @@
         <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
           <div class="grid">
             <div class="col-7 flex items-center height-100%">
-              <div class="text-component padding-md">
+              <div class="text-component width-100% padding-md">
                 <!--<img class="icon icon--xxl" src="/main/assets/img/icon5.png"/>-->
                 <h2 class="text-xl">Development</h2><br>
                   <div class="inline-flex lang">
@@ -161,7 +154,7 @@
                     <span class="dot2"></span>
                 </div>
               </div>
-              <a class="nextCard btn--accent" id="toNext4" onclick="smoothScrollTo('toNext4')"><strong>&gt;</strong></a>
+              <a class="nextCard  " id="toNext4" onclick="smoothScrollTo('toNext4')"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
             </div>
 
             <div class="col-5 height-100%">
@@ -173,7 +166,7 @@
         <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
           <div class="grid">
             <div class="col-7 flex items-center height-100%">
-              <div class="text-component padding-md">
+              <div class="text-component width-100% padding-md">
                 <!--<img class="icon icon--xxl" src="/main/assets/img/icon6.png"/>-->
                 <h2 class="text-xl">Certifications</h2><br>
                   <p class="text-sm">(CompTIA #COMP001022125735)</p>
@@ -188,7 +181,7 @@
                     2024</p>
                   
                 </div>
-                <a class="nextCard btn--accent" id="toNext5" onclick="smoothScrollTo('toNext5')"><strong>&gt;</strong></a>
+                <a class="nextCard  " id="toNext5" onclick="smoothScrollTo('toNext5')"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
               </div>
               
               <div class="col-5 height-100%">
@@ -200,7 +193,7 @@
         <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
           <div class="grid">
             <div class="col-7 flex items-center height-100%">
-              <div class="text-component padding-md">
+              <div class="text-component width-100% padding-md">
                 <!--<img class="icon icon--xl" src="/main/assets/img/icon6.png"/>-->
                 <h2 class="text-xl">Awards &amp; Recognition</h2><br>
                   <p class="text-sm"><strong>Jan 24 &nbsp;</strong>Division Company Grade Officer of
@@ -211,7 +204,7 @@
                   <p class="text-sm"><strong>May 22 &nbsp;</strong>Top Cadet, Software 
                       Engineering Capstone II and Computer Networks</p>
               </div>
-              <a class="nextCard btn--accent" id="toNext6" onclick="smoothScrollTo('toNext6')"><strong>&gt;</strong></a>
+              <a class="nextCard  " id="toNext6" onclick="smoothScrollTo('toNext6')"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
             </div>
               
             <div class="col-5 height-100%">
@@ -223,7 +216,7 @@
         <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
           <div class="grid">
             <div class="col-7 flex items-center height-100%">
-              <div class="text-component padding-md">
+              <div class="text-component width-100% padding-md">
                 <!--<img class="icon icon--xl" src="/main/assets/img/icon7.png"/>-->
                 <h2 class="text-xl">Languages</h2><br>
                 <p class="text-sm">(Per ILR Standard)</p>
@@ -262,7 +255,7 @@
 
                 </div>
               </div>
-              <a class="nextCard btn--accent" id="toNext7" onclick="smoothScrollTo('toNext7')"><strong>&gt;</strong></a>
+              <a class="nextCard  " id="toNext7" onclick="smoothScrollTo('toNext7')"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
             </div>
 
             <div class="col-5 height-100%">
@@ -274,7 +267,7 @@
         <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
           <div class="grid">
             <div class="col-7 flex items-center height-100%">
-              <div class="text-component padding-md">
+              <div class="text-component width-100% padding-md">
                 <!--<img class="icon icon--xl" src="/main/assets/img/icon8.png"/>-->
                 <h2 class="text-xl">Skills</h2><br>
                 <p class="text-sm">Agile Methodologies and Scrum</p>
@@ -287,7 +280,7 @@
                 <p class="text-sm">Performance Improvement and Conflict Resolution</p>
 
               </div>
-              <a class="nextCard btn--accent" id="toNext8" onclick="smoothScrollTo('toNext8')"><strong>&gt;</strong></a>
+              <a class="nextCard  " id="toNext8" onclick="smoothScrollTo('toNext8')"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
             </div>
 
             <div class="col-5 height-100%">
@@ -299,14 +292,14 @@
         <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
           <div class="grid">
             <div class="col-7 flex items-center height-100%">
-              <div class="text-component padding-md">
+              <div class="text-component width-100% padding-md">
                 <!--<img class="icon icon--xl" src="/main/assets/img/icon8.png"/>-->
                 <h2 class="text-xl">Clearances</h2><br>
                 <p class="text-sm">Active DOD Secret</p>
                 <p class="text-sm">Active DOD Top Secret</p>
                 <p class="text-sm">SCI Eligible</p>
               </div>
-              <a class="nextCard btn--accent" id="toNext9" onclick="smoothScrollTo('toTop')"><strong>&gt;</strong></a>
+              <a class="nextCard  " id="toNext9" onclick="smoothScrollTo('toTop')"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
             </div>
 
             <div class="col-5 height-100%">
@@ -318,7 +311,7 @@
     </div>
   
     <div class="footer">
-        <p><a class="btn btn--accent" id="toTop" onclick="smoothScrollTo('top')">Back to Top</a></p>
+        <p><a class="btn btn--accent" id="toTop" onclick="smoothScrollTo('top')">Back to Top&emsp;<i class="fa fa-chevron-up" aria-hidden="true"></i></a></p>
         <br>
         <p><i>Current as of June 2024</i></p>
     </div>

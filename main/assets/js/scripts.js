@@ -74,16 +74,15 @@ function smoothScrollTo(id) {
 /*
     light/dark toggle
 */
-const checkbox = document.getElementById("checkbox");
 var currentTheme = document.getElementsByTagName("html")[0];
 
-checkbox.addEventListener("change", () => {
+function lightDark() {
     const newTheme = currentTheme === "dark" ? "light" : "dark";
     document
         .getElementsByTagName("html")[0]
         .setAttribute("data-theme", newTheme);
     currentTheme = newTheme;
-});
+}
 
 /* 
 	class manipulation functions

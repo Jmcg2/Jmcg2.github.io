@@ -152,16 +152,19 @@ select {
 }
 
 .nextCard {
-    width: 35px;
-    height: 35px;
+    background-color: var(--color-bg);
+    color: var(--color-accent, white);
+    width: 0.9em;
+    height: 0.9em;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     white-space: nowrap;
+    font-size: 2.5em;
     text-decoration: none;
-    position: absolute;
-    bottom: 5%;
-    right: 3%;
+    position: relative;
+    bottom: -40%;
+    right: -65%;
     border-radius: 50%;
 }
 
@@ -181,49 +184,28 @@ select {
 
 #toggle {
     position: absolute;
-    right: 20px;
-    top: -5px;
-}
-
-.checkbox {
-    opacity: 0;
-}
-
-.checkbox-label {
-    background-color: var(--color-contrast-high);
-    width: 46px;
-    height: 24px;
-    border-radius: 50px;
-    position: relative;
-    padding: 5px 2px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.fa-moon,
-.fa-sun {
-    color: var(--color-bg);
-}
-
-.checkbox-label .ball {
-    background-color: var(--color-accent);
-    width: 24px;
-    height: 24px;
-    left: -1%;
-    top: 0.5%;
-    position: absolute;
+    background-color: transparent;
+    color: var(--color-accent);
+    width: 0.5px;
+    height: 0.5px;
+    padding: none;
+    font-size: 1.5em;
     border-radius: 50%;
-    transition: transform 0.2s linear;
+    right: 10px;
+    top: 20px;
 }
 
-.ball:hover {
-    background-color: var(--color-accent-dark);
+#toggle-backer {
+    position: absolute;
+    background-color: transparent;
+    color: var(--color-accent);
+    font-size: 1.4em;
 }
 
-.checkbox:checked + .checkbox-label .ball {
-    transform: translateX(23px);
+.fa-adjust {
+    background-color: var(--color-bg);
+    z-index: 1;
+    border-radius: 100%;
 }
 
 .lang {
