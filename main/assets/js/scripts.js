@@ -67,12 +67,10 @@ window.onload = function () {
 /*
     scroll to top function 
  */
-let mybutton = document.getElementById("toTop");
 
-function topFunction() {
-    document.getElementById("top").scrollIntoView({ behavior: "smooth" });
+function smoothScrollTo(id) {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
 }
-
 /*
     light/dark toggle
 */
@@ -80,7 +78,7 @@ const checkbox = document.getElementById("checkbox");
 var currentTheme = document.getElementsByTagName("html")[0];
 
 checkbox.addEventListener("change", () => {
-    const newTheme = currentTheme === "light" ? "dark" : "light";
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
     document
         .getElementsByTagName("html")[0]
         .setAttribute("data-theme", newTheme);

@@ -1,5 +1,5 @@
 <!doctype html>
-<html data-theme="dark" lang="en">
+<html data-theme="light" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,8 +15,8 @@
     <div id="toggle">
         <input type="checkbox" class="checkbox" id="checkbox">
         <label for="checkbox" class="checkbox-label">
-            <i class="fas fa-moon"></i>
             <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
             <span class="ball"></span>
         </label>
     </div>
@@ -25,29 +25,9 @@
       <div class="text-component padding-md text-center">
         <h2 class="text-xxxl" id="top">James McGoldrick</h2>
         <h2 class="text-xxl">Cyber Operations Professional</h2>
-          <h2 class="text-lg">
-            Experienced In
-            <span
-                class="txt-rotate"
-                data-period="750"
-                data-rotate='["Agile Methodologies",
-                             "DevSecOps",
-                             "CI/CD Pipelines",
-                             "Documentation Generation",
-                             "Machine Learning",
-                             "Computer Vision",
-                             "Information Protection",
-                             "Operational Security",
-                             "Change Management",
-                             "Remote Team Management",
-                             "Policy Improvement",
-                             "Performance Monitoring",
-                             "Conflict Resolution",
-                             "Operations Continuity"]'></span>
-        </h2>
         <br>
-        <p><a href=https://popl.co/card/LO2LHhx5/1/dash class="btn btn--accent">Contact</a></p>   
-      </div>
+        <p><a href=https://popl.co/card/LO2LHhx5/1/dash class="btn btn--primary">Contact</a></p>
+        </div>
     </div>
   
     <div class="container max-width-adaptive-md margin-bottom-lg">
@@ -66,7 +46,8 @@
                 <p class="text-sm">Commitment to maintaining operational excellence and
                     striving for perfection.</p>
                 <p><a href="https://drive.google.com/file/d/1urNe3Ck4sVJ5oLN4_zQ_L9u4Ehqb322L/view?usp=sharing" class="btn btn--primary">Download CV</a></p>
-              </div>
+                </div>
+                <a class="nextCard btn--accent" id="toNext" onclick="smoothScrollTo('toNext')"><strong>&gt;</strong></a>
             </div>
 
             <div class="col-5 height-100%">
@@ -84,6 +65,7 @@
                   <p class="text-sm"><strong>B.S. in Computer Science</strong> from the <strong>United States Air Force Academy</strong><i> - May 2022</i></p>
                   <p class="text-sm"><strong>M.S. in Computer Security and Information Assurance</strong> from the <strong>Western Governor's University</strong><i> - In Progress</i></p>
               </div>
+              <a class="nextCard btn--accent" id="toNext2" onclick="smoothScrollTo('toNext2')"><strong>&gt;</strong></a>
             </div>
 
             <div class="col-5 height-100%">
@@ -115,6 +97,7 @@
                     Undergraduate Cyber Warfare Training</p>
                   
               </div>
+              <a class="nextCard btn--accent" id="toNext3" onclick="smoothScrollTo('toNext3')"><strong>&gt;</strong></a>
             </div>
 
             <div class="col-5 height-100%">
@@ -178,6 +161,7 @@
                     <span class="dot2"></span>
                 </div>
               </div>
+              <a class="nextCard btn--accent" id="toNext4" onclick="smoothScrollTo('toNext4')"><strong>&gt;</strong></a>
             </div>
 
             <div class="col-5 height-100%">
@@ -204,6 +188,7 @@
                     2024</p>
                   
                 </div>
+                <a class="nextCard btn--accent" id="toNext5" onclick="smoothScrollTo('toNext5')"><strong>&gt;</strong></a>
               </div>
               
               <div class="col-5 height-100%">
@@ -226,6 +211,7 @@
                   <p class="text-sm"><strong>May 22 &nbsp;</strong>Top Cadet, Software 
                       Engineering Capstone II and Computer Networks</p>
               </div>
+              <a class="nextCard btn--accent" id="toNext6" onclick="smoothScrollTo('toNext6')"><strong>&gt;</strong></a>
             </div>
               
             <div class="col-5 height-100%">
@@ -276,10 +262,36 @@
 
                 </div>
               </div>
+              <a class="nextCard btn--accent" id="toNext7" onclick="smoothScrollTo('toNext7')"><strong>&gt;</strong></a>
             </div>
 
             <div class="col-5 height-100%">
               <img class="block width-100% height-100% object-cover" src="/main/assets/img/img7.jpg">
+            </div>
+          </div>
+        </li>
+          
+        <li data-theme="default" class="stack-cards__item bg radius-lg shadow-md js-stack-cards__item">
+          <div class="grid">
+            <div class="col-7 flex items-center height-100%">
+              <div class="text-component padding-md">
+                <!--<img class="icon icon--xl" src="/main/assets/img/icon8.png"/>-->
+                <h2 class="text-xl">Skills</h2><br>
+                <p class="text-sm">Agile Methodologies and Scrum</p>
+                <p class="text-sm">DevSecOps and CI/CD</p>
+                <p class="text-sm">Machine Learning and Computer Vision</p>
+                <p class="text-sm">Information Security and Assurance</p>
+                <p class="text-sm">Operational Security and Continuity</p>
+                <p class="text-sm">Change Management and Process Improvement</p>
+                <p class="text-sm">Team Management (On-site and Remote)</p>
+                <p class="text-sm">Performance Improvement and Conflict Resolution</p>
+
+              </div>
+              <a class="nextCard btn--accent" id="toNext8" onclick="smoothScrollTo('toNext8')"><strong>&gt;</strong></a>
+            </div>
+
+            <div class="col-5 height-100%">
+              <img class="block width-100% height-100% object-cover" src="/main/assets/img/img8.jpg">
             </div>
           </div>
         </li>
@@ -294,18 +306,19 @@
                 <p class="text-sm">Active DOD Top Secret</p>
                 <p class="text-sm">SCI Eligible</p>
               </div>
+              <a class="nextCard btn--accent" id="toNext9" onclick="smoothScrollTo('toTop')"><strong>&gt;</strong></a>
             </div>
 
             <div class="col-5 height-100%">
-              <img class="block width-100% height-100% object-cover" src="/main/assets/img/img8.jpg">
-            </div>a
+              <img class="block width-100% height-100% object-cover" src="/main/assets/img/img9.jpg">
+            </div>
           </div>
         </li>
       </ul>
     </div>
   
     <div class="footer">
-        <p><a class="btn btn--accent" id="toTop" onclick="topFunction()">Back to Top</a></p>
+        <p><a class="btn btn--accent" id="toTop" onclick="smoothScrollTo('top')">Back to Top</a></p>
         <br>
         <p><i>Current as of June 2024</i></p>
     </div>
