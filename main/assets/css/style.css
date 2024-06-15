@@ -1415,7 +1415,6 @@ i {
 .sr-only {
     position: absolute;
     clip: rect(1px, 1px, 1px, 1px);
-    -webkit-clip-path: inset(50%);
     clip-path: inset(50%);
     width: 1px;
     height: 1px;
@@ -2362,11 +2361,6 @@ i {
 .font-bold,
 .text-bold {
     font-weight: 700;
-}
-
-.font-smooth {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 .font-primary {
@@ -7426,8 +7420,6 @@ mark {
 .btn--primary {
     background-color: var(--color-primary);
     color: var(--color-bg);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 .btn--primary:hover {
     background-color: var(--color-primary-dark);
@@ -7445,8 +7437,6 @@ mark {
 .btn--accent {
     background-color: var(--color-accent);
     color: var(--color-bg);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 .btn--accent:hover {
     background-color: var(--color-accent-dark);
@@ -7531,13 +7521,10 @@ mark {
 }
 
 .stack-cards__item {
-    position: relative;
-    position: -webkit-sticky;
     position: sticky;
     top: var(--space-md);
     height: 0;
     padding-bottom: 50%;
-    -webkit-transform-origin: center top;
     transform-origin: center top;
     overflow: hidden;
 }
