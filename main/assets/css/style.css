@@ -171,16 +171,19 @@ select {
 }
 
 .lastCard {
-    width: 5%;
-    height: 10%;
+    background-color: var(--color-bg);
+    color: var(--color-accent, white);
+    width: 0.9em;
+    height: 0.9em;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     white-space: nowrap;
+    font-size: 2.5em;
     text-decoration: none;
-    position: absolute;
-    bottom: 5%;
-    right: 9%;
+    position: relative;
+    bottom: -40%;
+    right: -61%;
     border-radius: 50%;
 }
 
