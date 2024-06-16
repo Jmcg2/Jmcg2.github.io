@@ -188,26 +188,11 @@ select {
     position: absolute;
     background-color: transparent;
     color: var(--color-accent);
-    width: 0.5px;
-    height: 0.5px;
     padding: none;
     font-size: 1.4em;
     border-radius: 50%;
     right: 10px;
     top: 20px;
-}
-
-#toggle-backer {
-    position: absolute;
-    background-color: transparent;
-    color: var(--color-accent);
-    font-size: 1.4em;
-}
-
-.fa-adjust {
-    background-color: var(--color-bg);
-    z-index: 1;
-    border-radius: 100%;
 }
 
 .lang {

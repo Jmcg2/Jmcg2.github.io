@@ -11,13 +11,17 @@ function smoothScrollTo(id) {
 /*
     light/dark toggle
 */
-var currentTheme = document.getElementsByTagName("html")[0];
+var currentTheme = document.getElementById("wholeThing");
 
 function lightDark() {
     const newTheme = currentTheme === "dark" ? "light" : "dark";
-    document
-        .getElementsByTagName("html")[0]
-        .setAttribute("data-theme", newTheme);
+    const oldClass = currentTheme === "dark" ? "fa-sun" : "fa-moon";
+    const newClass = currentTheme === "dark" ? "fa-moon" : "fa-sun";
+
+    document.getElementById("wholeThing").setAttribute("data-theme", newTheme);
+    document.getElementById("toggleIcon").classList.add(newClass);
+    document.getElementById("toggleIcon").classList.remove(oldClass);
+
     currentTheme = newTheme;
 }
 
