@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
 *,
 *::after,
 *::before {
@@ -189,7 +191,7 @@ select {
     width: 0.5px;
     height: 0.5px;
     padding: none;
-    font-size: 1.5em;
+    font-size: 1.4em;
     border-radius: 50%;
     right: 10px;
     top: 20px;
@@ -7214,8 +7216,8 @@ i {
 }
 
 :root {
-    --font-primary: Roboto, sans-serif;
-    --font-secondary: Playfair Display, serif;
+    --font-primary: "Ubuntu Mono", sans-serif;
+    --font-secondary: "Victor Mono", sans-serif;
     --text-base-size: 1.5rem;
     --text-scale-ratio: 1.2;
     --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
