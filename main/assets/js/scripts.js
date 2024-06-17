@@ -11,14 +11,14 @@ function smoothScrollTo(id) {
 /*
     light/dark toggle
 */
-var currentTheme = document.getElementById("wholeThing");
+var currentTheme = document.getElementById("top");
 
 function lightDark() {
     const newTheme = currentTheme === "dark" ? "light" : "dark";
     const oldClass = currentTheme === "dark" ? "fa-sun" : "fa-moon";
     const newClass = currentTheme === "dark" ? "fa-moon" : "fa-sun";
 
-    document.getElementById("wholeThing").setAttribute("data-theme", newTheme);
+    document.getElementById("top").setAttribute("data-theme", newTheme);
     document.getElementById("toggleIcon").classList.add(newClass);
     document.getElementById("toggleIcon").classList.remove(oldClass);
 

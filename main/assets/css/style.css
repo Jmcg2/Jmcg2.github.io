@@ -148,54 +148,49 @@ select {
     border-radius: 0;
     color: inherit;
     line-height: inherit;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
 }
 
-.nextCard {
+.iconButton {
     background-color: var(--color-bg);
     color: var(--color-accent, white);
+    border-radius: 50px;
     width: 0.9em;
     height: 0.9em;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    padding: none;
     white-space: nowrap;
     font-size: 2.5em;
     text-decoration: none;
+}
+
+.iconButton:hover {
+    color: var(--color-accent-dark);
+}
+
+.iconButton:active {
+    transform: translatey(2px);
+}
+
+.nextCard {
     position: relative;
     bottom: -40%;
     right: -65%;
-    border-radius: 50%;
 }
 
 .lastCard {
-    background-color: var(--color-bg);
-    color: var(--color-accent, white);
-    width: 0.9em;
-    height: 0.9em;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
-    font-size: 2.5em;
-    text-decoration: none;
     position: relative;
     bottom: -40%;
     right: -61%;
-    border-radius: 50%;
 }
 
 #toggle {
     position: absolute;
-    background-color: transparent;
-    color: var(--color-accent);
-    padding: none;
-    font-size: 1.4em;
-    border-radius: 50%;
-    right: 10px;
+    right: 15px;
     top: 20px;
+    font-size: 1.4em;
 }
 
 .lang {
@@ -7333,7 +7328,7 @@ mark {
 }
 
 .text-component {
-    --line-height-multiplier: 1;
+    --line-height-multiplier: ;
     --text-vspace-multiplier: 1;
 }
 .text-component blockquote {
@@ -7369,14 +7364,14 @@ mark {
     text-decoration: none;
     line-height: 1;
     box-shadow:
-        0px 2px 8px 0
+        0 2px 8px 0
             hsla(
                 var(--color-black-h),
                 var(--color-black-s),
                 var(--color-black-l),
                 0.12
             ),
-        0px 1px 1px 0
+        0 1px 1px 0
             hsla(
                 var(--color-black-h),
                 var(--color-black-s),
@@ -7387,14 +7382,14 @@ mark {
 }
 .btn:hover {
     box-shadow:
-        0px 1px 2px 0
+        0 1px 2px 0
             hsla(
                 var(--color-black-h),
                 var(--color-black-s),
                 var(--color-black-l),
                 0.12
             ),
-        0px 1px 1px 0
+        0 1px 1px 0
             hsla(
                 var(--color-black-h),
                 var(--color-black-s),
@@ -7403,7 +7398,7 @@ mark {
             );
 }
 .btn:focus {
-    box-shadow: 0px 0px 0px 2px
+    box-shadow: 0 0 0 2px
         hsla(
             var(--color-black-h),
             var(--color-black-s),
@@ -7425,7 +7420,7 @@ mark {
     background-color: var(--color-primary-dark);
 }
 .btn--primary:focus {
-    box-shadow: 0px 0px 0px 2px
+    box-shadow: 0 0 0 2px
         hsla(
             var(--color-primary-h),
             var(--color-primary-s),
@@ -7442,7 +7437,7 @@ mark {
     background-color: var(--color-accent-dark);
 }
 .btn--accent:focus {
-    box-shadow: 0px 0px 0px 2px
+    box-shadow: 0 0 0 2px
         hsla(
             var(--color-accent-h),
             var(--color-accent-s),
@@ -7517,14 +7512,14 @@ mark {
 }
 
 .stack-cards {
-    --stack-cards-gap: var(--space-sm);
+    --stack-cards-gap: var(--space-md);
 }
 
 .stack-cards__item {
     position: sticky;
     top: var(--space-md);
     height: 0;
-    padding-bottom: 50%;
+    padding-bottom: 65%;
     transform-origin: center top;
     overflow: hidden;
 }
