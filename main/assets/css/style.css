@@ -177,13 +177,13 @@ select {
 .nextCard {
     position: relative;
     bottom: -40%;
-    right: -65%;
+    right: -92%;
 }
 
 .lastCard {
     position: relative;
     bottom: -40%;
-    right: -61%;
+    right: -88%;
 }
 
 #toggle {
@@ -196,6 +196,7 @@ select {
 .lang {
     width: 100%;
     max-height: 50px;
+    display: inline-flex;
 }
 
 .dot {
@@ -203,7 +204,6 @@ select {
     width: var(--text-md);
     background-color: var(--color-contrast-high);
     border-radius: 50%;
-    display: inline-block;
     margin: 0.5% 1%;
 }
 
@@ -212,7 +212,6 @@ select {
     width: var(--text-md);
     background-color: var(--color-contrast-low);
     border-radius: 50%;
-    display: inline-block;
     margin: 0.5% 1%;
 }
 
@@ -478,50 +477,6 @@ svg {
 .col-12 {
     flex-basis: calc(100% - 0.01px - var(--grid-gap, 1em));
     max-width: calc(100% - 0.01px - var(--grid-gap, 1em));
-}
-
-.offset-1 {
-    --offset: calc(8.33% + var(--grid-gap, 1em));
-}
-
-.offset-2 {
-    --offset: calc(16.66% + var(--grid-gap, 1em));
-}
-
-.offset-3 {
-    --offset: calc(25% + var(--grid-gap, 1em));
-}
-
-.offset-4 {
-    --offset: calc(33.33% + var(--grid-gap, 1em));
-}
-
-.offset-5 {
-    --offset: calc(41.66% + var(--grid-gap, 1em));
-}
-
-.offset-6 {
-    --offset: calc(50% + var(--grid-gap, 1em));
-}
-
-.offset-7 {
-    --offset: calc(58.33% + var(--grid-gap, 1em));
-}
-
-.offset-8 {
-    --offset: calc(66.66% + var(--grid-gap, 1em));
-}
-
-.offset-9 {
-    --offset: calc(75% + var(--grid-gap, 1em));
-}
-
-.offset-10 {
-    --offset: calc(83.33% + var(--grid-gap, 1em));
-}
-
-.offset-11 {
-    --offset: calc(91.66% + var(--grid-gap, 1em));
 }
 
 @media (min-width: 32rem) {
@@ -1005,6 +960,12 @@ h4 {
     line-height: var(--heading-line-height, 1.2);
 }
 
+p {
+    margin-bottom: calc(
+        var(--space-unit) * 0.75 * var(--text-vspace-multiplier, 1)
+    );
+}
+
 .text-xxxl {
     font-size: var(--text-xxxl, 2.488em);
 }
@@ -1148,8 +1109,10 @@ i {
 }
 
 .text-component__block--full-width {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
+    width: 100%;
+    margin-bottom: calc(
+        var(--space-unit) * 0.75 * var(--text-vspace-multiplier, 1)
+    );
 }
 
 @media (min-width: 48rem) {
@@ -1195,24 +1158,21 @@ i {
 }
 
 :root {
-    --icon-xxs: 12px;
-    --icon-xs: 16px;
-    --icon-sm: 24px;
-    --icon-md: 32px;
-    --icon-lg: 48px;
-    --icon-xl: 64px;
-    --icon-xxl: 128px;
+    --icon-xxs: 0.25em;
+    --icon-xs: 0.5em;
+    --icon-sm: 1em;
+    --icon-md: 2em;
+    --icon-lg: 4em;
+    --icon-xl: 8em;
+    --icon-xxl: 16em;
 }
 
 .icon {
     display: inline-block;
-    color: inherit;
-    fill: currentColor;
-    height: 1em;
-    width: 1em;
+    color: var(--color-primary);
     line-height: 1;
     flex-shrink: 0;
-    max-width: initial;
+    margin-bottom: 5%;
 }
 
 .icon--xxs {
@@ -7201,7 +7161,7 @@ i {
 :root {
     --font-primary: "Ubuntu Mono", sans-serif;
     --font-secondary: "Victor Mono", sans-serif;
-    --text-base-size: 1.5rem;
+    --text-base-size: 1.5em;
     --text-scale-ratio: 1.2;
     --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
     --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
@@ -7219,7 +7179,7 @@ i {
 @supports (--css: variables) {
     @media (min-width: 90rem) {
         :root {
-            --text-base-size: 1.25em;
+            --text-base-size: 1.4vw;
             --text-scale-ratio: 1.2;
             --text-xs: calc(
                 (1em / var(--text-scale-ratio)) / var(--text-scale-ratio)
@@ -7235,7 +7195,7 @@ i {
 
     @media (max-width: 80rem) {
         :root {
-            --text-base-size: 1.2em;
+            --text-base-size: 1.85vw;
             --text-scale-ratio: 1.2;
             --text-xs: calc(
                 (1em / var(--text-scale-ratio)) / var(--text-scale-ratio)
@@ -7251,7 +7211,7 @@ i {
 
     @media (max-width: 64rem) {
         :root {
-            --text-base-size: 1em;
+            --text-base-size: 1.75vw;
             --text-scale-ratio: 1.2;
             --text-xs: calc(
                 (1em / var(--text-scale-ratio)) / var(--text-scale-ratio)
@@ -7267,7 +7227,7 @@ i {
 
     @media (max-width: 48rem) {
         :root {
-            --text-base-size: 0.8em;
+            --text-base-size: 1.6vw;
             --text-scale-ratio: 1.2;
             --text-xs: calc(
                 (1em / var(--text-scale-ratio)) / var(--text-scale-ratio)
@@ -7283,7 +7243,7 @@ i {
 
     @media (max-width: 38rem) {
         :root {
-            --text-base-size: 0.6em;
+            --text-base-size: 2.25vw;
             --text-scale-ratio: 1.2;
             --text-xs: calc(
                 (1em / var(--text-scale-ratio)) / var(--text-scale-ratio)
@@ -7294,6 +7254,7 @@ i {
             --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
             --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
             --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
+            --icon-lg: 0em;
         }
     }
 }
