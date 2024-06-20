@@ -154,13 +154,15 @@ select {
 .iconButton {
     background-color: var(--color-bg);
     color: var(--color-primary, white);
+    height: 0.9em;
+    width: 0.9em;
     border-radius: 50px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: none;
     white-space: nowrap;
-    font-size: 2.5em;
+    font-size: 4vw;
     text-decoration: none;
 }
 
@@ -174,14 +176,14 @@ select {
 
 .nextCard {
     position: relative;
-    bottom: 1.5em;
-    left: 4.1em;
+    bottom: 10%;
+    left: 70%;
 }
 
 .lastCard {
     position: relative;
-    bottom: 1.5em;
-    left: 4em;
+    bottom: 10%;
+    left: 70%;
 }
 
 #toggle {
@@ -711,18 +713,19 @@ i {
 }
 
 :root {
-    --icon-xxs: calc(var(--icon-xs)/2);
-    --icon-xs: calc(var(--icon-sm)/2);
-    --icon-sm: calc(var(--icon-md)/2);
-    --icon-md: 1.5em;
-    --icon-lg: calc(var(--icon-md)*2);
-    --icon-xl: calc(var(--icon-lg)*2);
-    --icon-xxl: calc(var(--icon-xl)*2);
+    --icon-xxs: calc(var(--icon-xs) / 2);
+    --icon-xs: calc(var(--icon-sm) / 2);
+    --icon-sm: calc(var(--icon-md) / 2);
+    --icon-md: 2em;
+    --icon-lg: calc(var(--icon-md) * 2);
+    --icon-xl: calc(var(--icon-lg) * 2);
+    --icon-xxl: calc(var(--icon-xl) * 2);
 }
 
 .icon {
     display: inline-block;
     color: var(--color-primary);
+    background: transparent;
     line-height: 1;
     flex-shrink: 0;
     margin-bottom: 5%;
