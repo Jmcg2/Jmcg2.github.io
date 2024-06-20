@@ -176,14 +176,14 @@ select {
 
 .nextCard {
     position: relative;
-    bottom: 12.5%;
-    left: 65%;
+    bottom: 1.5em;
+    left: 4.1em;
 }
 
 .lastCard {
     position: relative;
-    bottom: 12.5%;
-    left: 62.5%;
+    bottom: 1.5em;
+    left: 4em;
 }
 
 #toggle {
