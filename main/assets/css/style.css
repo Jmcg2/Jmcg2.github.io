@@ -155,8 +155,6 @@ select {
     background-color: var(--color-bg);
     color: var(--color-primary, white);
     border-radius: 50px;
-    width: 0.9em;
-    height: 0.9em;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -713,13 +711,13 @@ i {
 }
 
 :root {
-    --icon-xxs: 0.25em;
-    --icon-xs: 0.5em;
-    --icon-sm: 1em;
-    --icon-md: 2em;
-    --icon-lg: 4em;
-    --icon-xl: 8em;
-    --icon-xxl: 16em;
+    --icon-xxs: calc(var(--icon-xs)/2);
+    --icon-xs: calc(var(--icon-sm)/2);
+    --icon-sm: calc(var(--icon-md)/2);
+    --icon-md: 1.5em;
+    --icon-lg: calc(var(--icon-md)*2);
+    --icon-xl: calc(var(--icon-lg)*2);
+    --icon-xxl: calc(var(--icon-xl)*2);
 }
 
 .icon {
