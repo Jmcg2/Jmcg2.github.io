@@ -162,7 +162,7 @@ select {
     align-items: center;
     padding: none;
     white-space: nowrap;
-    font-size: 4vw;
+    font-size: calc(var(--text-md) * 2);
     text-decoration: none;
 }
 
@@ -188,9 +188,9 @@ select {
 
 #toggle {
     position: absolute;
+    font-size: calc(var(--text-md) * 2);
     right: 15px;
     top: 20px;
-    font-size: 1.4em;
 }
 
 .lang {
@@ -716,7 +716,7 @@ i {
     --icon-xxs: calc(var(--icon-xs) / 2);
     --icon-xs: calc(var(--icon-sm) / 2);
     --icon-sm: calc(var(--icon-md) / 2);
-    --icon-md: 2em;
+    --icon-md: 1.5em;
     --icon-lg: calc(var(--icon-md) * 2);
     --icon-xl: calc(var(--icon-lg) * 2);
     --icon-xxl: calc(var(--icon-xl) * 2);
@@ -6805,7 +6805,7 @@ i {
             --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
             --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
             --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
-            --icon-lg: 0em;
+            --icon-md: 0em;
         }
     }
 }
