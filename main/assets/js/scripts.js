@@ -11,7 +11,7 @@ function smoothScrollTo(id) {
 /*
     light/dark toggle
 */
-var currentTheme = document.getElementById("top");
+var currentTheme = document.getElementById("top").getAttribute("data-theme");
 
 function lightDark() {
     const newTheme = currentTheme === "dark" ? "light" : "dark";
