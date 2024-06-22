@@ -724,6 +724,7 @@ small,
 
 .text-xs {
     font-size: var(--text-xs, 0.694em);
+    
 }
 
 a,
@@ -2035,6 +2036,7 @@ i {
 
 .text-right {
     text-align: right;
+    margin-top: -2%;
 }
 
 .text-line-through {
@@ -7014,7 +7016,7 @@ mark {
     position: sticky;
     top: var(--space-md);
     height: 0;
-    padding-bottom: 60%;
+    padding-bottom: 65%;
     transform-origin: center top;
     overflow: hidden;
 }
