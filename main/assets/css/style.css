@@ -412,9 +412,10 @@ select {
 
 #toggle {
     position: absolute;
+    font-size: 3vh;
     right: 0;
     top: 0;
-    margin: 7px;
+    margin: 10px;
 }
 
 .lang {
@@ -6802,7 +6803,7 @@ i {
             --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
             --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
             --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
-            --text-icon: 3em;
+            --text-icon: 0em;
             --icon-md: 0em;
         }
     }
