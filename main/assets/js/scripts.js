@@ -6,7 +6,9 @@ function Util() {}
  */
 
 function smoothScrollTo(id) {
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    document
+        .getElementById(id)
+        .scrollIntoView({ behavior: "smooth", block: "center" });
 }
 /*
     light/dark toggle
