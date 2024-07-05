@@ -6,19 +6,25 @@ function Util() {}
  */
 
 function smoothScrollTo(id) {
-    document
-        .getElementById(id)
-        .scrollIntoView({ behavior: "smooth", block: "center" });
+    document.getElementById(id).scrollIntoView({ behavior: "smooth", block: "center" });
 }
 /*
     light/dark toggle
 */
-var currentTheme = document.getElementById("top").getAttribute("data-theme");
+
+var currentTheme = "dark";
+
+function checkCookies() {
+    document.cookie = "darkMode=true";
+    currentTheme = getCookie("darkMode");
+}
 
 function lightDark() {
     const newTheme = currentTheme === "dark" ? "light" : "dark";
     const oldClass = currentTheme === "dark" ? "fa-sun" : "fa-moon";
     const newClass = currentTheme === "dark" ? "fa-moon" : "fa-sun";
+
+    document.cookie = currentTheme === "dark" ? "darkMode=false" : "darkMode=true";
 
     document.getElementById("top").setAttribute("data-theme", newTheme);
     document.getElementById("toggleIcon").classList.add(newClass);
@@ -32,17 +38,13 @@ function lightDark() {
 */
 Util.hasClass = function (el, className) {
     if (el.classList) return el.classList.contains(className);
-    else
-        return !!el.className.match(
-            new RegExp("(\\s|^)" + className + "(\\s|$)")
-        );
+    else return !!el.className.match(new RegExp("(\\s|^)" + className + "(\\s|$)"));
 };
 
 Util.addClass = function (el, className) {
     var classList = className.split(" ");
     if (el.classList) el.classList.add(classList[0]);
-    else if (!Util.hasClass(el, classList[0]))
-        el.className += " " + classList[0];
+    else if (!Util.hasClass(el, classList[0])) el.className += " " + classList[0];
     if (classList.length > 1) Util.addClass(el, classList.slice(1).join(" "));
 };
 
@@ -53,8 +55,7 @@ Util.removeClass = function (el, className) {
         var reg = new RegExp("(\\s|^)" + classList[0] + "(\\s|$)");
         el.className = el.className.replace(reg, " ");
     }
-    if (classList.length > 1)
-        Util.removeClass(el, classList.slice(1).join(" "));
+    if (classList.length > 1) Util.removeClass(el, classList.slice(1).join(" "));
 };
 
 Util.toggleClass = function (el, className, bool) {
@@ -75,8 +76,7 @@ Util.getChildrenByClassName = function (el, className) {
     var children = el.children,
         childrenByClass = [];
     for (var i = 0; i < el.children.length; i++) {
-        if (Util.hasClass(el.children[i], className))
-            childrenByClass.push(el.children[i]);
+        if (Util.hasClass(el.children[i], className)) childrenByClass.push(el.children[i]);
     }
     return childrenByClass;
 };
@@ -86,10 +86,7 @@ Util.is = function (elem, selector) {
         return elem === selector;
     }
 
-    var qa =
-            typeof selector === "string"
-                ? document.querySelectorAll(selector)
-                : selector,
+    var qa = typeof selector === "string" ? document.querySelectorAll(selector) : selector,
         length = qa.length,
         returnArr = [];
 
@@ -206,11 +203,7 @@ Util.extend = function () {
         for (var prop in obj) {
             if (Object.prototype.hasOwnProperty.call(obj, prop)) {
                 // If deep merge and property is an object, merge properties
-                if (
-                    deep &&
-                    Object.prototype.toString.call(obj[prop]) ===
-                        "[object Object]"
-                ) {
+                if (deep && Object.prototype.toString.call(obj[prop]) === "[object Object]") {
                     extended[prop] = extend(true, extended[prop], obj[prop]);
                 } else {
                     extended[prop] = obj[prop];
@@ -241,9 +234,7 @@ Util.osHasReducedMotion = function () {
 */
 //Closest() method
 if (!Element.prototype.matches) {
-    Element.prototype.matches =
-        Element.prototype.msMatchesSelector ||
-        Element.prototype.webkitMatchesSelector;
+    Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
 }
 
 if (!Element.prototype.closest) {
@@ -267,12 +258,7 @@ if (typeof window.CustomEvent !== "function") {
             detail: undefined
         };
         var evt = document.createEvent("CustomEvent");
-        evt.initCustomEvent(
-            event,
-            params.bubbles,
-            params.cancelable,
-            params.detail
-        );
+        evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail);
         return evt;
     }
 
@@ -322,9 +308,7 @@ Math.easeInOutQuad = function (t, b, c, d) {
 (function () {
     var StackCards = function (element) {
         this.element = element;
-        this.items = this.element.getElementsByClassName(
-            "js-stack-cards__item"
-        );
+        this.items = this.element.getElementsByClassName("js-stack-cards__item");
         this.scrollingFn = false;
         this.scrolling = false;
         initStackCardsEffect(this);
@@ -334,10 +318,7 @@ Math.easeInOutQuad = function (t, b, c, d) {
     function initStackCardsEffect(element) {
         // use Intersection Observer to trigger animation
         setStackCards(element); // store cards CSS properties
-        var observer = new IntersectionObserver(
-            stackCardsCallback.bind(element),
-            { threshold: [0, 1] }
-        );
+        var observer = new IntersectionObserver(stackCardsCallback.bind(element), { threshold: [0, 1] });
         observer.observe(element.element);
     }
 
@@ -374,20 +355,14 @@ Math.easeInOutQuad = function (t, b, c, d) {
 
     function setStackCards(element) {
         // store wrapper properties
-        element.marginY = getComputedStyle(element.element).getPropertyValue(
-            "--stack-cards-gap"
-        );
+        element.marginY = getComputedStyle(element.element).getPropertyValue("--stack-cards-gap");
         getIntegerFromProperty(element); // convert element.marginY to integer (px value)
         element.elementHeight = element.element.offsetHeight;
 
         // store card properties
         var cardStyle = getComputedStyle(element.items[0]);
-        element.cardTop = Math.floor(
-            parseFloat(cardStyle.getPropertyValue("top"))
-        );
-        element.cardHeight = Math.floor(
-            parseFloat(cardStyle.getPropertyValue("height"))
-        );
+        element.cardTop = Math.floor(parseFloat(cardStyle.getPropertyValue("top")));
+        element.cardHeight = Math.floor(parseFloat(cardStyle.getPropertyValue("height")));
 
         // store window property
         element.windowHeight = window.innerHeight;
@@ -396,31 +371,23 @@ Math.easeInOutQuad = function (t, b, c, d) {
         if (isNaN(element.marginY)) {
             element.element.style.paddingBottom = "0px";
         } else {
-            element.element.style.paddingBottom =
-                element.marginY * (element.items.length - 1) + "px";
+            element.element.style.paddingBottom = element.marginY * (element.items.length - 1) + "px";
         }
 
         for (var i = 0; i < element.items.length; i++) {
             if (isNaN(element.marginY)) {
                 element.items[i].style.transform = "none;";
             } else {
-                element.items[i].style.transform =
-                    "translateY(" + element.marginY * i + "px)";
+                element.items[i].style.transform = "translateY(" + element.marginY * i + "px)";
             }
         }
     }
 
     function getIntegerFromProperty(element) {
         var node = document.createElement("div");
-        node.setAttribute(
-            "style",
-            "opacity:0; visbility: hidden;position: absolute; height:" +
-                element.marginY
-        );
+        node.setAttribute("style", "opacity:0; visbility: hidden;position: absolute; height:" + element.marginY);
         element.element.appendChild(node);
-        element.marginY = parseInt(
-            getComputedStyle(node).getPropertyValue("height")
-        );
+        element.marginY = parseInt(getComputedStyle(node).getPropertyValue("height"));
         element.element.removeChild(node);
     }
 
@@ -449,23 +416,12 @@ Math.easeInOutQuad = function (t, b, c, d) {
 
         for (var i = 0; i < this.items.length; i++) {
             // use only scale
-            var scrolling =
-                this.cardTop - top - i * (this.cardHeight + this.marginY);
+            var scrolling = this.cardTop - top - i * (this.cardHeight + this.marginY);
             if (scrolling > 0) {
-                var scaling =
-                    i == this.items.length - 1
-                        ? 1
-                        : (this.cardHeight - scrolling * 0.05) /
-                          this.cardHeight;
-                this.items[i].style.transform =
-                    "translateY(" +
-                    this.marginY * i +
-                    "px) scale(" +
-                    scaling +
-                    ")";
+                var scaling = i == this.items.length - 1 ? 1 : (this.cardHeight - scrolling * 0.05) / this.cardHeight;
+                this.items[i].style.transform = "translateY(" + this.marginY * i + "px) scale(" + scaling + ")";
             } else {
-                this.items[i].style.transform =
-                    "translateY(" + this.marginY * i + "px)";
+                this.items[i].style.transform = "translateY(" + this.marginY * i + "px)";
             }
         }
 
@@ -480,11 +436,7 @@ Math.easeInOutQuad = function (t, b, c, d) {
             "intersectionRatio" in window.IntersectionObserverEntry.prototype,
         reducedMotion = Util.osHasReducedMotion();
 
-    if (
-        stackCards.length > 0 &&
-        intersectionObserverSupported &&
-        !reducedMotion
-    ) {
+    if (stackCards.length > 0 && intersectionObserverSupported && !reducedMotion) {
         var stackCardsArray = [];
         for (var i = 0; i < stackCards.length; i++) {
             (function (i) {

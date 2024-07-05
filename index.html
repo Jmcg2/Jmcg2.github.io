@@ -1,5 +1,5 @@
 <!doctype html>
-<html id="top" data-theme="dark" lang="en">
+<html id="top" data-theme="dark" lang="en" onload="checkCookies()">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,13 +10,14 @@
 </head>
 <body>
 
+    <a class="iconButton" id="toggle" onclick="lightDark()">                    
+        <i class="fa fa-sun" id="toggleIcon"></i>
+    </a>
+    
     <main class="padding-y-xs">
         <div class="container max-width-adaptive-sm margin-bottom-md">
             <div class="text-component width-100% text-center">
-                <a class="iconButton" id="toggle" onclick="lightDark()">
-                    <i class="fa fa-sun" id="toggleIcon"></i>
-                </a>
-                <h2 class="text-xxxl" id="top">James McGoldrick</h2>
+                <h2 class="text-xxxl">James McGoldrick</h2>
                 <h2 class="text-xxl">Cyber Operations Professional</h2>
                 <br>
                 <a href=https://popl.co/card/LO2LHhx5/1/dash class="btn btn--primary">Contact</a>
@@ -48,7 +49,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-5 height-100% padding-md">
+                        <div class="col-5 height-100% padding-sm">
                             <img class="object-cover width-100% height-100% radius-lg" src="/main/assets/img/img1.jpg">
                             <a class="lastCard iconButton" onclick="smoothScrollTo('toggle')">
                                 <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
@@ -82,7 +83,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-5 height-100% padding-md">
+                        <div class="col-5 height-100% padding-sm">
                             <img class="object-cover width-100% height-100% radius-lg" src="/main/assets/img/img2.jpg">
                             <a class="lastCard iconButton" onclick="smoothScrollTo('section1')">
                                 <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
@@ -129,7 +130,7 @@
                         </div>
                         
                         
-                        <div class="col-5 height-100% padding-md">
+                        <div class="col-5 height-100% padding-sm">
                             <img class="object-cover width-100% height-100% radius-lg" src="/main/assets/img/img6.jpg">
                             <a class="lastCard iconButton" onclick="smoothScrollTo('section2')">
                                 <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
@@ -198,7 +199,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-5 height-100% padding-md">
+                        <div class="col-5 height-100% padding-sm">
                             <img class="object-cover width-100% height-100% radius-lg" src="/main/assets/img/img4.jpg">
                             <a class="lastCard iconButton" onclick="smoothScrollTo('section3')">
                                 <i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
@@ -216,19 +217,22 @@
                                 <i class="icon icon--lg fa fa-certificate"></i>
                                 <h2 class="text-xxxl" id="section5">Certifications</h2><br>
                                 <p class="text-sm">(CompTIA #COMP001022125735)</p>
-                                <p class="text-sm width-80%"><strong>COMPTIA Security+</strong></p>
+                                <p class="text-sm width-80%"><strong>COMPTIA</strong> Security+</p>
                                 <p class="footnote">- Sep 22</p>
                                 
-                                <p class="text-sm width-80%"><strong>COMPTIA CySA+</strong></p>
+                                <p class="text-sm width-80%"><strong>COMPTIA</strong> CySA+</p>
                                 <p class="footnote">- Feb 24</p>
                                 
-                                <p class="text-sm width-80%"><strong>COMPTIA Pentest+</strong></p>
+                                <p class="text-sm width-80%"><strong>COMPTIA</strong> Pentest+</p>
                                 <p class="footnote">- Mar 24</p>
+                                
+                                <p class="text-sm width-80%"><strong>COMPTIA</strong> CASP+</p>
+                                <p class="footnote">- Jul 24</p>
                             
                             </div>
                         </div>
                         
-                        <div class="col-5 height-100% padding-md">
+                        <div class="col-5 height-100% padding-sm">
                             <img class="object-cover width-100% height-100% radius-lg" src="/main/assets/img/img5.jpg">
                             <a class="lastCard iconButton" onclick="smoothScrollTo('section4')">
                                 <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
@@ -260,7 +264,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-5 height-100% padding-md">
+                        <div class="col-5 height-100% padding-sm">
                             <img class="object-cover width-100% height-100% radius-lg" src="/main/assets/img/img3.jpg">
                             <a class="lastCard iconButton" id="tolast6" onclick="smoothScrollTo('section5')">
                                 <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
@@ -313,7 +317,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-5 height-100% padding-md">
+                        <div class="col-5 height-100% padding-sm">
                             <img class="object-cover width-100% height-100% radius-lg" src="/main/assets/img/img7.jpg">
                             <a class="lastCard iconButton" onclick="smoothScrollTo('section6')">
                                 <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
@@ -348,7 +352,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-5 height-100% padding-md">
+                        <div class="col-5 height-100% padding-sm">
                             <img class="object-cover width-100% height-100% radius-lg" src="/main/assets/img/img8.jpg">
                             <a class="lastCard iconButton" onclick="smoothScrollTo('section7')">
                                 <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
@@ -373,7 +377,7 @@
 
                         </div>
                         
-                        <div class="col-5 height-100% padding-md">
+                        <div class="col-5 height-100% padding-sm">
                             <img class="object-cover width-100% height-100% radius-lg" src="/main/assets/img/img9.jpg">
                             <a class="lastCard iconButton" onclick="smoothScrollTo('section8')">
                                 <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
