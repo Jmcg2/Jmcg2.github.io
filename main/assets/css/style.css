@@ -415,7 +415,7 @@ select {
 
 .footnote {
     text-align: right;
-    margin-top: -2%;
+    margin-top: -2.5%;
     font-size: var(--text-sm);
     font-style: italic;
     font-weight: bold;
@@ -6776,7 +6776,7 @@ mark {
     position: sticky;
     top: var(--space-md);
     height: 0;
-    padding-bottom: 65%;
+    padding-bottom: 63%;
     margin-bottom: var(--space-md);
     transform-origin: center top;
     overflow: hidden;
