@@ -1,0 +1,211 @@
+:root {
+  --dark-color: rgba(28, 28, 28);
+  --light-color: #dbdbdb;
+  --primary-color: #18230F;
+  --primary-color-light: #27391C;
+  --accent-color: #52050A;
+  --accent-color-light: #52050A;
+  --font-family: Atkinson Hyperlegible Mono, Roboto Mono, Montserrat;
+  --font-scale: 1.2rem;
+}
+
+body{     
+    background-color: var(--dark-color);
+    background-image: url("../img/bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: var(--font-family);
+    color: var(--light-color);
+    margin: 0px;
+}
+
+i{
+    color: var(--light-color)
+}
+
+h2{
+    font-size: calc(0.9 * var(--font-scale));
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+    margin: 1rem 0;
+    display: inline-block;
+}
+
+h3{
+     font-size: calc(0.8 * var(--font-scale));
+    font-weight: 200;
+    letter-spacing: 0.15rem;
+    margin: -1rem 0 1rem;
+}
+
+h4{
+     font-size: calc(0.7 * var(--font-scale));
+    font-weight: 200;
+    letter-spacing: 0.11rem;
+    line-height: 2rem;
+    margin: 0;
+    padding-left: 0.75rem;
+}
+
+ul{
+    margin: 0.5rem 1rem 0.5rem -1.5rem;
+}
+
+li, p{
+    font-size: calc(0.6 * var(--font-scale));
+    font-weight: 100;
+    letter-spacing: 0.11rem;
+    list-style-type: "-";
+}
+
+button, a {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+button:hover {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.2);
+}
+
+a:hover {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.2);
+}
+
+#surname {
+    font-weight: 800;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.column-left{
+    flex:30%;
+}
+
+.column-right{
+    flex:60%;
+}
+
+.column-equal{
+    flex:50%;
+}
+
+.comfy{
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.compact{
+    padding: 0.5rem;
+    margin: 0.25rem;
+}
+
+.logo-medium{
+    width: 5rem;
+    height: 5rem;
+    padding: 3px;
+}
+
+.bg-light{
+    background-color: var(--light-color);
+}
+
+.bg-primary{
+    background-color: var(--primary-color);
+}
+
+.bg-dark-opacity-hi{
+    background-color: rgba(from var(--dark-color) r g b / 0.9);
+}
+
+.bg-dark-opacity-lo{
+    background-color: rgba(from var(--dark-color) r g b / 0.4);
+}
+
+.bg-accent{
+    background-color: var(--accent-color);
+}
+
+.bg-no {
+    background-color: rgba(0,0,0, 0.25);
+}
+
+.rounded{
+    border-radius: 5px;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.italic{
+    font-style: italic
+}
+
+.nav{
+  position: sticky;
+  top: 0;
+}
+
+.nav-content{
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+    width: 90%;
+    margin-left: 1rem;
+}
+
+.spacer{
+    height: 5rem;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px){
+    :root{
+          --font-scale: 1rem;
+    }
+    
+    /*switch to one column on screens that can't comfortably fit all three*/   
+    .columns {
+        flex-direction: column;
+    }
+}
+
+@media print{
+    @page {
+        size: A4;
+        margin: 0.5cm;
+    }
+
+    /*set all fonts to black for better readibility when printed*/
+    body{
+        color: black;
+    }
+
+    .nav{
+        position: relative;
+    }
+
+    .rounded{
+        border-width: 2px;
+        border-style: solid;
+    }
+
+    /*hide buttons since the don't work when printed*/
+    button, a{
+        display: none;
+    }
+}

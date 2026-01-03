@@ -4,44 +4,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
-    <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
-    <link rel="stylesheet" href="/main/assets/css/style.css">
-    <script src="/main/assets/js/scripts.js"></script>
-    <link rel="icon" type="image/x-icon" href="main/assets/img/favicon.png">
+    <link rel="stylesheet" href="/main/css/style.css">
+    <script src="/main/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"
+        integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" type="image/x-icon" href="main/img/favicon.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/ca4eff4df4.js" crossorigin="anonymous"></script>
-    <title>jmcg2.io</title>
+    <title>Resume: James McGoldrick</title>
 </head>
 
-<body>
+<body id="resume">
     <main>
-        <div class="mui-appbar bg-primary">
-            <table width="100%">
-                <tr style="vertical-align:middle;">
-                    <td class="mui--appbar-height">
-                        <h2>James <b>McGoldrick</b></h2>
-                        <h3><i>Cyberspace Engineer, Communications Officer</i></h3>
-                    </td>
-                    <td class="mui--appbar-height" align="right">
-                        <button class="mui-btn mui-btn--primary bg-accent rounded">
-                            <i class="fa-solid fa-cloud-arrow-down"></i>
-                            Download
-                        </button>
-                        <button class="mui-btn mui-btn--primary bg-accent rounded">
-                            <i class="fa-solid fa-print"></i>
-                            Print</button>
-                        <button class="mui-btn mui-btn--primary bg-accent rounded">
-                            <i class="fa-solid fa-envelope"></i>
-                            Contact</button>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div>
+        <div class="nav bg-dark-opacity-hi">
+            <div class="nav-content">
+                <h2>James </h2>
+                <h2 id="surname">McGoldrick</h2>
+                <h3 class="italic">Cyberspace Engineer, Communications Officer</h3>
+            </div>
 
+        </div>
+
+        <span class="spacer"></span>
+
+        <div class="columns bg-dark-opacity-lo">
+            <div class="column-left comfy">
+                <h4>Background</h4>
+                <div class="bg-dark-opacity-hi rounded compact">
+                    <p>some stuff</p>
+                </div>
+                <h4>Skills</h4>
+                <div class="bg-dark-opacity-hi rounded compact">
+                    <ul>
+                        <li> Agile Methodologies </li>
+                        <li> CI/CD Pipelines </li>
+                        <li> Change Management </li>
+                        <li> Conflict Resolution </li>
+                        <li> Containerization </li>
+                        <li> Orchestration </li>
+                        <li> Computer Vision </li>
+                        <li> DevSecOps Principles </li>
+                        <li> Documentation</li>
+                        <li> Distribution/Licensing </li>
+                        <li> Information Protection </li>
+                        <li> Machine Learning </li>
+                        <li> Operational Security </li>
+                        <li> Operations Continuity </li>
+                        <li> Process Improvement </li>
+                        <li> Performance Monitoring </li>
+                        <li> Remote Team Management </li>
+                        <li> Resource Management </li>
+                        <li> Version Control </li>
+                    </ul>
+                </div>
+                <h4>Languages</h4>
+                <div class="bg-dark-opacity-hi rounded compact">
+                    <ul>
+                        <li> English </li>
+                        <li> Spanish</li>
+                    </ul>
+                </div>
+                <h4>Programming</h4>
+                <div class="bg-dark-opacity-hi rounded compact">
+                    <ul>
+                        <li> HTML & CSS </li>
+                        <li> C </li>
+                        <li> C# </li>
+                        <li> C++ </li>
+                        <li> Java </li>
+                        <li> Kotlin </li>
+                        <li> Javascript </li>
+                        <li> Typescript </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="column-right comfy">
+                <h4>Experience</h4>
+                <div class="bg-dark-opacity-hi rounded compact">
+                    <p>Went here</p>
+                </div>
+                <div class="bg-dark-opacity-hi rounded compact">
+                    <p>Went here</p>
+                </div>
+                <div class="bg-dark-opacity-hi rounded compact">
+                    <p>Went here</p>
+                </div>
+                <div class="bg-dark-opacity-hi rounded compact">
+                    <p>Went here</p>
+                </div>
+
+                <div class="columns">
+                    <div class="column-equal">
+                        <h4>Education</h4>
+                        <div class="bg-dark-opacity-hi rounded compact">
+                            <p>1 school</p>
+                        </div>
+                        <div class="bg-dark-opacity-hi rounded compact">
+                            <p>2 school</p>
+                        </div>
+
+                    </div>
+
+                    <div class="column-equal">
+                        <h4>Training</h4>
+                        <div class="bg-dark-opacity-hi rounded compact">
+                            <p>1 training</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column-equal">
+                        <h4>Recognition</h4>
+                        <div class="bg-dark-opacity-hi rounded compact">
+                            <p>some stuff</p>
+                        </div>
+
+                    </div>
+
+                    <div class="column-equal">
+                        <h4>Certifications</h4>
+                        <div class="bg-dark-opacity-hi rounded compact">
+                            <p>1 cert</p>
+                        </div>
+                        <div class="bg-dark-opacity-hi rounded compact">
+                            <p>2 cert</p>
+                        </div>
+                        <div class="bg-dark-opacity-hi rounded compact">
+                            <p>3 cert</p>
+                        </div>
+                        <div class="bg-dark-opacity-hi rounded compact">
+                            <p>4 cert</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="footer compact bg-dark-opacity-hi">
+            <span>
+                <button title="Download" class="bg-no rounded" onclick="toPDF()">
+                    <i class="fa-solid fa-download"></i></button>
+                <button title="Print" class="bg-no rounded" onclick="window.print()">
+                    <i class="fa-solid fa-print"></i></button>
+                <a title="Email" class="bg-no rounded" href="mailto:jmcgoldrick2@gmail.com">
+                    <i class="fa-solid fa-envelope"></i></a>
+                <a title="Call" class="bg-no rounded" href="tel:862-324-2563">
+                    <i class="fa-solid fa-phone"></i></a>
+            </span>
         </div>
     </main>
 </body>
