@@ -1,64 +1,66 @@
 :root {
-  --dark-color: rgba(28, 28, 28);
-  --light-color: #dbdbdb;
-  --primary-color: #18230F;
-  --primary-color-light: #27391C;
-  --accent-color: #52050A;
-  --accent-color-light: #52050A;
-  --font-family: Atkinson Hyperlegible Mono, Roboto Mono, Montserrat;
-  --font-scale: 1.2rem;
+    --dark-color: #212121;
+    --medium-color: #383838;
+    --light-color: #c4c4c4;
+    --font-family-heading: Atkinson Hyperlegible Mono, Sans-serif;
+    --font-family-content: Inter, Sans-serif;
+    --font-scale: 1.2rem;
 }
 
-body{     
+body {
     background-color: var(--dark-color);
     background-image: url("../img/bg.jpg");
     background-attachment: fixed;
     background-size: cover;
-    font-family: var(--font-family);
+    font-family: var(--font-family-heading);
     color: var(--light-color);
     margin: 0px;
 }
 
-i{
-    color: var(--light-color)
+i,
+a {
+    color: var(--light-color);
+    text-decoration: none;
 }
 
-h2{
-    font-size: calc(0.9 * var(--font-scale));
+h2 {
+    font-size: calc(1.0 * var(--font-scale));
     font-weight: 300;
     letter-spacing: 0.3rem;
     margin: 1rem 0;
     display: inline-block;
 }
 
-h3{
-     font-size: calc(0.8 * var(--font-scale));
+h3 {
+    font-size: calc(0.9 * var(--font-scale));
     font-weight: 200;
     letter-spacing: 0.15rem;
     margin: -1rem 0 1rem;
 }
 
-h4{
-     font-size: calc(0.7 * var(--font-scale));
-    font-weight: 200;
+h4 {
+    font-size: calc(0.8 * var(--font-scale));
+    font-weight: 400;
     letter-spacing: 0.11rem;
     line-height: 2rem;
     margin: 0;
     padding-left: 0.75rem;
 }
 
-ul{
+ul {
     margin: 0.5rem 1rem 0.5rem -1.5rem;
 }
 
-li, p{
-    font-size: calc(0.6 * var(--font-scale));
+li,
+p {
+    font-size: calc(0.8 * var(--font-scale));
     font-weight: 100;
-    letter-spacing: 0.11rem;
+    line-height: 1.2rem;
     list-style-type: "-";
+    font-family: var(--font-family-content);
 }
 
-button, a {
+button {
     border: none;
     outline: none;
     cursor: pointer;
@@ -66,13 +68,8 @@ button, a {
 }
 
 button:hover {
-    transition: transform 0.5s ease-in-out;
-    transform: scale(1.2);
-}
-
-a:hover {
-    transition: transform 0.5s ease-in-out;
-    transform: scale(1.2);
+    transition: filter 0.5s ease-in-out;
+    filter: brightness(140%);
 }
 
 #surname {
@@ -84,76 +81,84 @@ a:hover {
     flex-direction: row;
 }
 
-.column-left{
-    flex:30%;
+.column-left {
+    flex: 30%;
 }
 
-.column-right{
-    flex:60%;
+.column-right {
+    flex: 60%;
 }
 
-.column-equal{
-    flex:50%;
+.column-equal {
+    flex: 50%;
 }
 
-.comfy{
+.comfy {
     padding: 1rem;
     margin: 0.5rem;
 }
 
-.compact{
+.comfy-no-left {
+    padding: 1rem 1rem 1rem 0rem;
+    margin: 0.5rem 0.5rem 0.5rem 0rem;
+}
+
+.comfy-no-right {
+    padding: 1rem 0rem 1rem 1rem;
+    margin: 0.5rem 0rem 0.5rem 0.5rem;
+}
+
+.compact {
     padding: 0.5rem;
     margin: 0.25rem;
 }
 
-.logo-medium{
+.logo-medium {
     width: 5rem;
     height: 5rem;
     padding: 3px;
 }
 
-.bg-light{
+.bg-light {
     background-color: var(--light-color);
 }
 
-.bg-primary{
-    background-color: var(--primary-color);
-}
-
-.bg-dark-opacity-hi{
+.bg-dark-opacity-hi {
     background-color: rgba(from var(--dark-color) r g b / 0.9);
 }
 
-.bg-dark-opacity-lo{
+.bg-dark-opacity-lo {
     background-color: rgba(from var(--dark-color) r g b / 0.4);
 }
 
-.bg-accent{
-    background-color: var(--accent-color);
-}
-
 .bg-no {
-    background-color: rgba(0,0,0, 0.25);
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
-.rounded{
+.bordered {
+    border: 1px;
+    border-style: solid;
+    border-color: var(--medium-color);
+}
+
+.rounded {
     border-radius: 5px;
 }
 
-.inline{
+.inline {
     display: inline-block;
 }
 
-.italic{
+.italic {
     font-style: italic
 }
 
-.nav{
-  position: sticky;
-  top: 0;
+.nav {
+    position: sticky;
+    top: 0;
 }
 
-.nav-content{
+.nav-content {
     display: inline-block;
     position: relative;
     vertical-align: bottom;
@@ -161,51 +166,78 @@ a:hover {
     margin-left: 1rem;
 }
 
-.spacer{
+.spacer {
     height: 5rem;
 }
 
-.footer{
-  position: fixed;
-  bottom: 0;
-  width: 100vw;
-  text-align: center;
-  margin-bottom: 0;
+.square-small {
+    width: 2.2rem;
+    height: 2.2rem;
 }
 
-@media (max-width: 700px){
-    :root{
-          --font-scale: 1rem;
+.footer {
+    position: fixed;
+    width: 100vw;
+    text-align: center;
+    bottom: 0;
+    margin: 0;
+}
+
+#footer-text {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    :root {
+        --font-scale: 1rem;
     }
-    
-    /*switch to one column on screens that can't comfortably fit all three*/   
+
+    /*switch to one column on screens that can't comfortably fit all three*/
     .columns {
         flex-direction: column;
     }
 }
 
-@media print{
+@media print {
     @page {
         size: A4;
-        margin: 0.5cm;
+        margin: 0.75cm;
     }
 
     /*set all fonts to black for better readibility when printed*/
-    body{
+    body {
         color: black;
     }
 
-    .nav{
+    .nav,
+    .footer {
         position: relative;
     }
 
-    .rounded{
-        border-width: 2px;
+    /*replace bordered items with giving cards a border*/
+    .bordered {
+        border: none;
+    }
+
+    .rounded {
+        border-width: 1px;
         border-style: solid;
     }
 
+    /*make comfy less comfy*/
+    .comfy, .comfy-no-left, .comfy-no-right{
+        padding: 0rem;
+        margin: 0rem;
+    }
+
     /*hide buttons since the don't work when printed*/
-    button, a{
+    button,
+    a {
         display: none;
+    }
+
+    /*show footer text instead to provide info from buttons*/
+    #footer-text {
+        display: inline;
     }
 }
