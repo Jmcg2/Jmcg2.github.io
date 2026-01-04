@@ -4,7 +4,7 @@
     --light-color: #c4c4c4;
     --font-family-heading: Atkinson Hyperlegible Mono, Sans-serif;
     --font-family-content: Inter, Sans-serif;
-    --font-scale: 1.2rem;
+    --font-scale: 1.25rem;
 }
 
 body {
@@ -25,7 +25,7 @@ a {
 
 h2 {
     font-size: calc(1.0 * var(--font-scale));
-    font-weight: 300;
+    font-weight: 600;
     letter-spacing: 0.3rem;
     margin: 1rem 0;
     display: inline-block;
@@ -33,7 +33,7 @@ h2 {
 
 h3 {
     font-size: calc(0.9 * var(--font-scale));
-    font-weight: 200;
+    font-weight: 400;
     letter-spacing: 0.15rem;
     margin: -1rem 0 1rem;
 }
@@ -47,16 +47,20 @@ h4 {
     padding-left: 0.75rem;
 }
 
-ul {
-    margin: 0.5rem 1rem 0.5rem -1.5rem;
-}
-
 li,
 p {
     font-size: calc(0.8 * var(--font-scale));
-    font-weight: 100;
+    font-weight: 200;
     line-height: 1.2rem;
     list-style-type: "-";
+    font-family: var(--font-family-content);
+}
+
+.no-style{
+    list-style: "";
+}
+
+b, i, .italic{
     font-family: var(--font-family-content);
 }
 
@@ -81,11 +85,11 @@ button:hover {
     flex-direction: row;
 }
 
-.column-left {
+.column-small{
     flex: 30%;
 }
 
-.column-right {
+.column-large {
     flex: 60%;
 }
 
@@ -93,24 +97,27 @@ button:hover {
     flex: 50%;
 }
 
+.column-spacer {
+    flex: 5%;
+}
+
 .comfy {
     padding: 1rem;
     margin: 0.5rem;
 }
 
-.comfy-no-left {
-    padding: 1rem 1rem 1rem 0rem;
-    margin: 0.5rem 0.5rem 0.5rem 0rem;
-}
-
-.comfy-no-right {
-    padding: 1rem 0rem 1rem 1rem;
-    margin: 0.5rem 0rem 0.5rem 0.5rem;
+.comfy-no-leftright {
+    padding: 1rem 0rem;
+    margin: 0.5rem 0rem;
 }
 
 .compact {
-    padding: 0.5rem;
-    margin: 0.25rem;
+    padding: 0.3rem 0.5rem;
+    margin: 0.2rem 0.25rem;
+}
+
+.disabled {
+    color: var(--medium-color)
 }
 
 .logo-medium {
@@ -141,16 +148,30 @@ button:hover {
     border-color: var(--medium-color);
 }
 
-.rounded {
-    border-radius: 5px;
+
+
+.footer {
+    position: fixed;
+    width: 100vw;
+    text-align: center;
+    bottom: 0;
+    margin: 0;
 }
 
-.inline {
-    display: inline-block;
+#footer-text {
+    display: none;
 }
 
 .italic {
-    font-style: italic
+    font-style: italic;
+}
+
+.icon-small {
+    font-size: 0.8rem;
+}
+
+.rounded {
+    border-radius: 5px;
 }
 
 .nav {
@@ -166,30 +187,14 @@ button:hover {
     margin-left: 1rem;
 }
 
-.spacer {
-    height: 5rem;
-}
-
 .square-small {
     width: 2.2rem;
     height: 2.2rem;
 }
 
-.footer {
-    position: fixed;
-    width: 100vw;
-    text-align: center;
-    bottom: 0;
-    margin: 0;
-}
-
-#footer-text {
-    display: none;
-}
-
 @media (max-width: 700px) {
     :root {
-        --font-scale: 1rem;
+        --font-scale: 1.1rem;
     }
 
     /*switch to one column on screens that can't comfortably fit all three*/
@@ -205,13 +210,26 @@ button:hover {
     }
 
     /*set all fonts to black for better readibility when printed*/
-    body {
+    body, i{
         color: black;
+    }
+
+    p, li{
+        font-size: 10pt;
+    }
+
+    /*improve contrast between filled and unfilled bubbles*/
+    .disabled {
+        filter: brightness(200%);
     }
 
     .nav,
     .footer {
         position: relative;
+    }
+
+    .column-spacer{
+        flex: 1;
     }
 
     /*replace bordered items with giving cards a border*/
@@ -225,12 +243,12 @@ button:hover {
     }
 
     /*make comfy less comfy*/
-    .comfy, .comfy-no-left, .comfy-no-right{
-        padding: 0rem;
-        margin: 0rem;
+    .comfy, .comfy-no-leftright{
+        padding: 0.1rem;
+        margin: 0.1rem;
     }
 
-    /*hide buttons since the don't work when printed*/
+    /*hide buttons since they don't work when printed*/
     button,
     a {
         display: none;
