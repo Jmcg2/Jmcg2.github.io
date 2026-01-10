@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/main/css/style.css">
+    <link rel="stylesheet" href="/main/css/print.css">
     <script src="/main/js/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"
         integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg=="
@@ -19,7 +20,7 @@
 
 <body id="resume">
     <main>
-        <div class="nav bg-dark-opacity-hi bordered">
+        <div class="nav bg-dark-opacity-hi bordered-bottom z-top">
             <div class="nav-content">
                 <h2>James </h2>
                 <h2 id="surname">McGoldrick</h2>
@@ -28,246 +29,327 @@
 
         </div>
 
-        <div class="columns bg-dark-opacity-lo">
-            <div class="column-small comfy">
-                <h4>Background</h4>
-                <div class="bg-dark-opacity-hi rounded bordered compact">
-                    <p class="compact">A highly skilled military
-                        professional experienced in leading
-                        operations in a variety of
-                        environments.</p>
-                </div>
-                <h4>Skills</h4>
-                <div class="bg-dark-opacity-hi rounded bordered compact">
-                    <ul class="compact">
-                        <li>Agile Methodologies</li>
-                        <li>CI/CD Pipelines</li>
-                        <li>Change Management</li>
-                        <li>Conflict Resolution</li>
-                        <li>Containerization</li>
-                        <li>Orchestration</li>
-                        <li>Computer Vision</li>
-                        <li>DevSecOps Principles</li>
-                        <li>Documentation</li>
-                        <li>Distribution/Licensing</li>
-                        <li>Information Protection</li>
-                        <li>Machine Learning</li>
-                        <li>Operational Security</li>
-                        <li>Operations Continuity</li>
-                        <li>Process Improvement</li>
-                        <li>Performance Monitoring</li>
-                        <li>Remote Team Management</li>
-                        <li>Resource Management</li>
-                        <li>Version Control</li>
-                    </ul>
-                </div>
-                <h4>Languages</h4>
-                <div class="bg-dark-opacity-hi rounded bordered compact">
-                    <ul class="compact">
-                        <li>English
-                            <a class="fa-solid fa-circle icon-small"></a>
-                            <a class="fa-solid fa-circle icon-small"></a>
-                            <a class="fa-solid fa-circle icon-small"></a>
-                            <a class="fa-solid fa-circle icon-small"></a>
-                            <a class="fa-solid fa-circle icon-small"></a>
-                        </li>
-                        <li>Spanish
-                            <a class="fa-solid fa-circle icon-small"></a>
-                            <a class="fa-solid fa-circle icon-small"></a>
-                            <a class="fa-solid fa-circle icon-small"></a>
-                            <a class="fa-solid fa-circle icon-small-disabled"></a>
-                            <a class="fa-solid fa-circle icon-small-disabled"></a>
-                        </li>
-                    </ul>
-                </div>
-                <h4>Programming</h4>
-                <div class="bg-dark-opacity-hi rounded bordered compact">
-                    <ul class="compact">
-                        <li>HTML & CSS</li>
-                        <li>C</li>
-                        <li>C#</li>
-                        <li>C++</li>
-                        <li>Java</li>
-                        <li>Kotlin</li>
-                        <li>Javascript</li>
-                        <li>Typescript</li>
-                    </ul>
-                </div>
-            </div>
+        <div>
 
-            <div class="column-large comfy">
-                <h4>Experience</h4>
-                <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle">
-                    <P class="compact column-xsmall text-middle">
-                        <img src="main/img/conjure.png" class="compact logo-small"></image>
-                        <b>Jun 25
-                        <br>| 
-                        <br>Present</b>
-                    </P>
-                    <p class="compact column-xlarge">
-                        <b>Intermin Software Engineering Lead</b><br>
-                        GHOST Agile Release Train
-                        <a class="fa-solid fa-location-dot icon-small"></a> Scott AFB, IL<br><br>
-                        <i>Drafted reports for senior management outlining key accomplishments
-                            and improvements. Cultivated positive relationships with external
-                            stakeholders to enhance potential partnerships. Reviewed existing
-                            procedures regularly to identify areas for improvement or cost reduction.
-                            Assessed employed performance on a regular basis and provided timely
-                            feedback.</i>
-                    </p>
-                </div>
-
-                <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle">
-                    <P class="compact column-xsmall text-middle">
-                        <img src="main/img/conjure.png" class="compact logo-small"></image>
-                        <b>Feb 23
-                        <br>| 
-                        <br>Jun 25</b>
-                    </P>
-                    <p class="compact column-xlarge">
-                        <b>Deputy Branch Chief, Operations Lead</b><br>
-                        Conjure (Rapid Prototyping) Branch 
-                        <a class="fa-solid fa-location-dot icon-small"></a> Scott AFB, IL<br><br>
-                        <i>Drafted reports for senior management outlining key accomplishments
-                            and improvements. Cultivated positive relationships with external
-                            stakeholders to enhance potential partnerships. Reviewed existing
-                            procedures regularly to identify areas for improvement or cost reduction.
-                            Assessed employed performance on a regular basis and provided timely
-                            feedback.</i>
-                    </p>
-
-                </div>
+            <div class="constrain-width">
 
                 <div class="columns">
-                    <div class="column-equal comfy-no-leftright">
-                        <h4>Education</h4>
-                        <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle">
-                            <P class="compact column-xsmall"><b>2024</b></P>
-                            <p class="compact column-xlarge">
-                                <b>Computer Security and Information Assurance</b>
-                                <br><a class="fa-solid fa-building-columns icon-small"></a> MS | WGU
-                                <br><i>School of Info. Tech.</i>
-                            </p>
-                            <img src="main/img/wgu.png" class="compact column-xsmall logo-small"></image>
+                    <div class="column-small comfy">
+                        <h4>Background</h4>
+                        <div class="bg-dark-opacity-hi rounded bordered compact">
+                            <p class="compact">A highly skilled military
+                                professional experienced in leading
+                                operations in a variety of
+                                environments.</p>
                         </div>
-                        <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle">
-                            <P class="compact column-xsmall">
-                                <b>2022</b>
-                            </P>
-                            <p class="compact column-xlarge">
-                                <b>Computer Science</b>
-                                <br><a class="fa-solid fa-building-columns icon-small"></a> BS | USAF Academy
-                                <br><i>3.6 GPA</i>
-                                <br><i>Spanish Minor</i>
-                            </p>
-                            <img src="main/img/usaf.png" class="compact column-xsmall logo-small"></image>
-                        </div>
-
-                    </div>
-
-                    <div class="column-spacer"></div>
-
-                    <div class="column-equal comfy-no-leftright">
-                        <h4>Training</h4>
-                        <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle">
-                            <P class="compact column-xsmall"><b>2023</b></P>
-                            <p class="compact column-large">
-                                <b>Undergraduate Cyber Warfare Training</b>
-                                <br><a class="fa-solid fa-building-columns icon-small"></a> Keesler AFB | MS
-                                <br><i>3.9 GPA, D.G.</i>
-                            </p>
-                            <img src="main/img/333.png" class="compact column-xsmall logo-small"></image>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="columns">
-                    <div class="column-equal comfy-no-leftright">
-                        <h4>Recognition</h4>
+                        <h4>Skills</h4>
                         <div class="bg-dark-opacity-hi rounded bordered compact">
                             <ul class="compact">
-                                <li class="compact no-style">
-                                    <b>2025</b>
-                                    <br>Operating Location CGO of Q1
+                                <li>Agile Methodologies</li>
+                                <li>CI/CD Pipelines</li>
+                                <li>Change Management</li>
+                                <li>Conflict Resolution</li>
+                                <li>Containerization</li>
+                                <li>Orchestration</li>
+                                <li>Computer Vision</li>
+                                <li>DevSecOps Principles</li>
+                                <li>Documentation</li>
+                                <li>Distribution/Licensing</li>
+                                <li>Information Protection</li>
+                                <li>Machine Learning</li>
+                                <li>Operational Security</li>
+                                <li>Operations Continuity</li>
+                                <li>Process Improvement</li>
+                                <li>Performance Monitoring</li>
+                                <li>Remote Team Management</li>
+                                <li>Resource Management</li>
+                                <li>Version Control</li>
+                            </ul>
+                        </div>
+                        <h4>Languages</h4>
+                        <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed">
+                            <ul class="compact column-xsmall">
+                                <li>English</li>
+                                <li>Spanish</li>
+                            </ul>
+                            <ul class="compact column-large">
+                                <li class="no-style">
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
                                 </li>
-                                <li class="compact no-style">
-                                    <b>2024</b>
-                                    <br>Division CGO of the year
-                                    <br>Operating Location CGO of the year
-                                    <br>Division IT Professional of the year
-                                </li>
-                                <li class="compact no-style">
-                                    <b>2023</b>
-                                    <br>Division CGO of Q4
-                                    <br>Air and Space Commendation
-                                    <br>Distinguished Graduate, UCWT
-                                    <br>Top Contributor, UCWT
-                                </li>
-                                <li class="compact no-style">
-                                    <b>2022</b>
-                                    <br>Top Cadet, CS 454
-                                    <br>Top Cadet, CS 467
+                                <li class="no-style">
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small-disabled"></a>
+                                    <a class="fa-solid fa-circle icon-small-disabled"></a>
                                 </li>
                             </ul>
                         </div>
-
+                        <h4>Programming</h4>
+                        <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed">
+                            <ul class="compact column-xsmall">
+                                <li>HTML/CSS</li>
+                                <li>C</li>
+                                <li>C#</li>
+                                <li>CPP</li>
+                                <li>Java</li>
+                                <li>Kotlin</li>
+                                <li>Javascript</li>
+                                <li>Typescript</li>
+                            </ul>
+                            <ul class="compact column-large">
+                                <li class="no-style">
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small-disabled"></a>
+                                    <a class="fa-solid fa-circle icon-small-disabled"></a>
+                                </li>
+                                <li class="no-style">
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small-disabled"></a>
+                                </li>
+                                <li class="no-style">
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small-disabled"></a>
+                                    <a class="fa-solid fa-circle icon-small-disabled"></a>
+                                </li>
+                                <li class="no-style">
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small-disabled"></a>
+                                    <a class="fa-solid fa-circle icon-small-disabled"></a>
+                                    <a class="fa-solid fa-circle icon-small-disabled"></a>
+                                </li>
+                                <li class="no-style">
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small-disabled"></a>
+                                </li>
+                                <li class="no-style">
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small-disabled"></a>
+                                    <a class="fa-solid fa-circle icon-small-disabled"></a>
+                                </li>
+                                <li class="no-style">
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small-disabled"></a>
+                                </li>
+                                <li class="no-style">
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small"></a>
+                                    <a class="fa-solid fa-circle icon-small-disabled"></a>
+                                    <a class="fa-solid fa-circle icon-small-disabled"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h4>Clearances</h4>
+                        <div class="bg-dark-opacity-hi rounded bordered compact">
+                            <ul class="compact">
+                                <li>Active S</li>
+                                <li>Active TS</li>
+                                <li>SCI Eligible</li>
+                                <li>COINTEL Polygraph</li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="column-spacer"></div>
-
-                    <div class="column-equal comfy-no-leftright">
-                        <h4>Certifications</h4>
-                        <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle">
-                            <p class="compact column-xlarge">
-                                <b>Sep 2024</b>
-                                <br>
-                                CompTIA Security+
+                    <div class="column-large comfy">
+                        <h4>Experience</h4>
+                        <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
+                            <P class="compact column-gutter text-middle">
+                                <img src="main/img/conjure.png" class="compact logo-small"></image>
+                                <b>Jun 25
+                                    <br>-
+                                    <br>Present</b>
+                            </P>
+                            <p class="compact column-large bordered-left">
+                                <b>Intermin Software Engineering Lead</b><br>
+                                GHOST Agile Release Train
+                                <a class="fa-solid fa-location-dot icon-small"></a> Scott AFB, IL<br><br>
+                                <i>Drafted reports for senior management outlining key accomplishments
+                                    and improvements. Cultivated positive relationships with external
+                                    stakeholders to enhance potential partnerships. Reviewed existing
+                                    procedures regularly to identify areas for improvement or cost reduction.
+                                    Assessed employed performance on a regular basis and provided timely
+                                    feedback.</i>
                             </p>
-                            <img src="main/img/sec.png" class="compact column-xsmall logo-small"></image>
-                        </div>
-                        <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle">
-                            <p class="compact column-xlarge">
-                                <b>Feb 2024</b>
-                                <br>CompTIA CySA+
-                            </p>
-                            <img src="main/img/cysa.png" class="compact column-xsmall logo-small"></image>
-                        </div>
-                        <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle">
-                            <p class="compact column-xlarge">
-                                <b>Mar 2024</b>
-                                <br>
-                                CompTIA Pentest+
-                            </p>
-                            <img src="main/img/pent.png" class="compact column-xsmall logo-small"></image>
-                        </div>
-                        <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle">
-                            <p class="compact column-xlarge">
-                                <b>Jul 2024</b>
-                                <br>CompTIA CASP+
-                            </p>
-                            <img src="main/img/casp.png" class="compact column-xsmall logo-small"></image>
                         </div>
 
+                        <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle ">
+                            <P class="compact column-gutter text-middle">
+                                <img src="main/img/conjure.png" class="compact logo-small"></image>
+                                <b>Feb 23
+                                    <br>-
+                                    <br>Jun 25</b>
+                            </P>
+                            <p class="compact column-large bordered-left">
+                                <b>Deputy Branch Chief, Operations Lead</b><br>
+                                Conjure (Rapid Prototyping) Branch
+                                <a class="fa-solid fa-location-dot icon-small"></a> Scott AFB, IL<br><br>
+                                <i>Drafted reports for senior management outlining key accomplishments
+                                    and improvements. Cultivated positive relationships with external
+                                    stakeholders to enhance potential partnerships. Reviewed existing
+                                    procedures regularly to identify areas for improvement or cost reduction.
+                                    Assessed employed performance on a regular basis and provided timely
+                                    feedback.</i>
+                            </p>
+
+                        </div>
+
+                        <div class="columns page-break">
+                            <div class="column-equal comfy-no-leftright extra-margin-right">
+                                <h4>Education</h4>
+                                <div
+                                    class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
+                                    <P class="compact column-gutter text-middle">
+                                        <img src="main/img/wgu.png" class="compact logo-small"></image>
+                                        <b>2024</b>
+                                    </P>
+                                    <p class="compact column-large bordered-left">
+                                        <b>Computer Security & Information Assurance</b>
+                                        <br><a class="fa-solid fa-building-columns icon-small"></a> MS • WGU
+                                        <br><i>School of Info. Tech.</i>
+                                    </p>
+                                </div>
+                                <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle">
+                                    <P class="compact column-gutter text-middle">
+                                        <img src="main/img/usaf.png" class="compact logo-small"></image>
+                                        <b>2022</b>
+                                    </P>
+                                    <p class="compact column-large bordered-left">
+                                        <b>Computer Science</b>
+                                        <br><a class="fa-solid fa-building-columns icon-small"></a> BS • USAF Academy
+                                        <br><i>3.6 GPA
+                                            <br><i>Spanish Minor</i>
+                                    </p>
+                                </div>
+
+                                <h4>Recognition</h4>
+                                <div class="bg-dark-opacity-hi rounded bordered compact extra-margin-bottom">
+                                    <ul class="compact">
+                                        <li class="compact no-style">
+                                            <b>2025</b>
+                                            <br>Operating Location CGO of Q1
+                                        </li>
+                                        <li class="compact no-style">
+                                            <b>2024</b>
+                                            <br>Division CGO of the year
+                                            <br>Operating Location CGO of the year
+                                            <br>Division IT Professional of the year
+                                        </li>
+                                        <li class="compact no-style">
+                                            <b>2023</b>
+                                            <br>Division CGO of Q4
+                                            <br>Air and Space Commendation
+                                            <br>Distinguished Graduate, UCWT
+                                            <br>Top Contributor, UCWT
+                                        </li>
+                                        <li class="compact no-style">
+                                            <b>2022</b>
+                                            <br>Top Cadet, CS 454
+                                            <br>Top Cadet, CS 467
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="column-equal comfy-no-leftright">
+                                <h4>Training</h4>
+                                <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
+                                    <P class="compact column-gutter text-middle">
+                                        <img src="main/img/333.png" class="compact logo-small"></image>
+                                        <b>2023</b>
+                                    </P>
+                                    <p class="compact column-large bordered-left">
+                                        <b>Undergraduate Cyber Warfare Training</b>
+                                        <br><a class="fa-solid fa-building-columns icon-small"></a> 333 TRS • Keesler
+                                        AFB
+                                        <br><i>3.9 GPA - Distinguished Graduate</i>
+                                    </p>
+                                </div>
+
+                                <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle">
+                                    <P class="compact column-gutter text-middle">
+                                        <img src="main/img/usaf.png" class="compact logo-small"></image>
+                                        <b>2022</b>
+                                    </P>
+                                    <p class="compact column-large bordered-left">
+                                        <b>Officership</b>
+                                        <br><a class="fa-solid fa-building-columns icon-small"></a> Squadron 20 • USAF Academy
+                                        <br><i>3.7 MPA
+                                    </p>
+                                </div>
+
+                                <h4>Certifications</h4>
+                                <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
+                                    <p class="compact column-large">
+                                        <b>Sep 2024</b>
+                                        <br>
+                                        CompTIA Security+
+                                    </p>
+                                    <img src="main/img/sec.png" class="compact column-gutter logo-medium"></image>
+                                </div>
+                                <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
+                                    <p class="compact column-large">
+                                        <b>Feb 2024</b>
+                                        <br>CompTIA CySA+
+                                    </p>
+                                    <img src="main/img/cysa.png" class="compact column-gutter logo-medium"></image>
+                                </div>
+                                <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
+                                    <p class="compact column-large">
+                                        <b>Mar 2024</b>
+                                        <br>
+                                        CompTIA Pentest+
+                                    </p>
+                                    <img src="main/img/pent.png" class="compact column-gutter logo-medium"></image>
+                                </div>
+                                <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
+                                    <p class="compact column-large">
+                                        <b>Jul 2024</b>
+                                        <br>CompTIA CASP+
+                                    </p>
+                                    <img src="main/img/casp.png" class="compact column-gutter logo-medium"></image>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-
             </div>
+
         </div>
 
-        <div class="column-spacer bg-dark-opacity-lo"></div>
-
-        <div class="footer compact bg-dark-opacity-hi bordered">
+        <div class="footer compact bg-dark-opacity-hi bordered-top z-top">
             <span>
-                <button title="Download" class="bg-no square-small rounded" onclick="toPDF()">
+                <button title="Download" class="bg-no square-small rounded bordered" onclick="toPDF()">
                     <a class="fa-solid fa-download"></a></button>
-                <button title="Print" class="bg-no square-small rounded" onclick="window.print()">
+                <button title="Print" class="bg-no square-small rounded bordered" onclick="window.print()">
                     <a class="fa-solid fa-print"></a></button>
-                <button title="Email" class="bg-no square-small rounded">
+                <button title="Email" class="bg-no square-small rounded bordered">
                     <a href="mailto:jmcgoldrick2@gmail.com" class="fa-solid fa-envelope"></a>
                 </button>
-                <button title="Call" class="bg-no square-small rounded">
+                <button title="Call" class="bg-no square-small rounded bordered">
                     <a href="tel:862-324-256" class="fa-solid fa-phone"></a>
                 </button>
             </span>
