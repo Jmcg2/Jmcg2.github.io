@@ -20,13 +20,27 @@
 
 <body id="resume">
     <main>
-        <div class="nav bg-dark-opacity-hi bordered-bottom z-top">
-            <div class="nav-content">
-                <h2>James </h2>
+        <div class="nav bg-dark-opacity-hi bordered-bottom z-top columns">
+            <div class="compact column-75">
+                <h2 class="compact" >James </h2>
                 <h2 id="surname">McGoldrick</h2>
-                <h3><i>Cyberspace Engineer, Communications Officer</i></h3>
+                <h4 class="compact squish-up"><i>Software Development Project Lead</i></h4>               
             </div>
 
+            <div class="compact bottom column-25">
+                <div class="compact right">
+                    <button title="Download" class="bg-no square-small rounded bordered" onclick="toPDF()">
+                        <a class="fa-solid fa-download"></a></button>
+                    <button title="Print" class="bg-no square-small rounded bordered" onclick="window.print()">
+                        <a class="fa-solid fa-print"></a></button>
+                    <button title="Email" class="bg-no square-small rounded bordered">
+                        <a href="mailto:jmcgoldrick2@gmail.com" class="fa-solid fa-envelope"></a>
+                    </button>
+                    <button title="Call" class="bg-no square-small rounded bordered">
+                        <a href="tel:862-324-256" class="fa-solid fa-phone"></a>
+                    </button>
+                </div>
+            </div>
         </div>
 
         <div>
@@ -34,7 +48,7 @@
             <div class="constrain-width">
 
                 <div class="columns">
-                    <div class="column-small comfy">
+                    <div class="column-25 comfy">
                         <h4>Background</h4>
                         <div class="bg-dark-opacity-hi rounded bordered compact">
                             <p class="compact">A highly skilled military
@@ -72,7 +86,7 @@
                                 <li>English</li>
                                 <li>Spanish</li>
                             </ul>
-                            <ul class="compact column-large">
+                            <ul class="compact column-75">
                                 <li class="no-style">
                                     <a class="fa-solid fa-circle icon-small"></a>
                                     <a class="fa-solid fa-circle icon-small"></a>
@@ -101,7 +115,7 @@
                                 <li>Javascript</li>
                                 <li>Typescript</li>
                             </ul>
-                            <ul class="compact column-large">
+                            <ul class="compact column-75">
                                 <li class="no-style">
                                     <a class="fa-solid fa-circle icon-small"></a>
                                     <a class="fa-solid fa-circle icon-small"></a>
@@ -160,28 +174,48 @@
                                 </li>
                             </ul>
                         </div>
-                        <h4>Clearances</h4>
+
+                        <h4>Recognition</h4>
                         <div class="bg-dark-opacity-hi rounded bordered compact">
                             <ul class="compact">
-                                <li>Active S</li>
-                                <li>Active TS</li>
-                                <li>SCI Eligible</li>
-                                <li>COINTEL Polygraph</li>
+                                <li class="compact no-style">
+                                    <b>2025</b>
+                                    <br>Operating Location CGO of Q1
+                                </li>
+                                <li class="compact no-style">
+                                    <b>2024</b>
+                                    <br>Division CGO of the year
+                                    <br>Operating Location CGO of the year
+                                    <br>Division IT Professional of the year
+                                </li>
+                                <li class="compact no-style">
+                                    <b>2023</b>
+                                    <br>Division CGO of Q4
+                                    <br>Air and Space Commendation
+                                    <br>Distinguished Graduate, UCWT
+                                    <br>Top Contributor, UCWT
+                                </li>
+                                <li class="compact no-style">
+                                    <b>2022</b>
+                                    <br>Top Cadet, CS 454
+                                    <br>Top Cadet, CS 467
+                                </li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="column-large comfy">
+                    <div class="column-50 comfy">
                         <h4>Experience</h4>
-                        <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
+                        <div
+                            class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
                             <P class="compact column-gutter text-middle">
-                                <img src="main/img/conjure.png" class="compact logo-small"></image>
+                                <img src="main/img/c3m.png" class="compact logo-small"></image>
                                 <b>Jun 25
                                     <br>-
                                     <br>Present</b>
                             </P>
-                            <p class="compact column-large bordered-left">
-                                <b>Intermin Software Engineering Lead</b><br>
+                            <p class="compact column-75 bordered-left">
+                                <b>Cyberspace Engineer</b><br>
                                 GHOST Agile Release Train
                                 <a class="fa-solid fa-location-dot icon-small"></a> Scott AFB, IL<br><br>
                                 <i>Drafted reports for senior management outlining key accomplishments
@@ -193,15 +227,16 @@
                             </p>
                         </div>
 
-                        <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle ">
+                        <div
+                            class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
                             <P class="compact column-gutter text-middle">
                                 <img src="main/img/conjure.png" class="compact logo-small"></image>
                                 <b>Feb 23
                                     <br>-
                                     <br>Jun 25</b>
                             </P>
-                            <p class="compact column-large bordered-left">
-                                <b>Deputy Branch Chief, Operations Lead</b><br>
+                            <p class="compact column-50 bordered-left">
+                                <b>Deputy Branch Chief</b><br>
                                 Conjure (Rapid Prototyping) Branch
                                 <a class="fa-solid fa-location-dot icon-small"></a> Scott AFB, IL<br><br>
                                 <i>Drafted reports for senior management outlining key accomplishments
@@ -211,149 +246,143 @@
                                     Assessed employed performance on a regular basis and provided timely
                                     feedback.</i>
                             </p>
-
                         </div>
 
-                        <div class="columns page-break">
-                            <div class="column-equal comfy-no-leftright extra-margin-right">
-                                <h4>Education</h4>
-                                <div
-                                    class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
-                                    <P class="compact column-gutter text-middle">
-                                        <img src="main/img/wgu.png" class="compact logo-small"></image>
-                                        <b>2024</b>
-                                    </P>
-                                    <p class="compact column-large bordered-left">
-                                        <b>Computer Security & Information Assurance</b>
-                                        <br><a class="fa-solid fa-building-columns icon-small"></a> MS • WGU
-                                        <br><i>School of Info. Tech.</i>
-                                    </p>
-                                </div>
-                                <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle">
-                                    <P class="compact column-gutter text-middle">
-                                        <img src="main/img/usaf.png" class="compact logo-small"></image>
-                                        <b>2022</b>
-                                    </P>
-                                    <p class="compact column-large bordered-left">
-                                        <b>Computer Science</b>
-                                        <br><a class="fa-solid fa-building-columns icon-small"></a> BS • USAF Academy
-                                        <br><i>3.6 GPA
-                                            <br><i>Spanish Minor</i>
-                                    </p>
-                                </div>
-
-                                <h4>Recognition</h4>
-                                <div class="bg-dark-opacity-hi rounded bordered compact extra-margin-bottom">
-                                    <ul class="compact">
-                                        <li class="compact no-style">
-                                            <b>2025</b>
-                                            <br>Operating Location CGO of Q1
-                                        </li>
-                                        <li class="compact no-style">
-                                            <b>2024</b>
-                                            <br>Division CGO of the year
-                                            <br>Operating Location CGO of the year
-                                            <br>Division IT Professional of the year
-                                        </li>
-                                        <li class="compact no-style">
-                                            <b>2023</b>
-                                            <br>Division CGO of Q4
-                                            <br>Air and Space Commendation
-                                            <br>Distinguished Graduate, UCWT
-                                            <br>Top Contributor, UCWT
-                                        </li>
-                                        <li class="compact no-style">
-                                            <b>2022</b>
-                                            <br>Top Cadet, CS 454
-                                            <br>Top Cadet, CS 467
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-                            <div class="column-equal comfy-no-leftright">
-                                <h4>Training</h4>
-                                <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
-                                    <P class="compact column-gutter text-middle">
-                                        <img src="main/img/333.png" class="compact logo-small"></image>
-                                        <b>2023</b>
-                                    </P>
-                                    <p class="compact column-large bordered-left">
-                                        <b>Undergraduate Cyber Warfare Training</b>
-                                        <br><a class="fa-solid fa-building-columns icon-small"></a> 333 TRS • Keesler
-                                        AFB
-                                        <br><i>3.9 GPA - Distinguished Graduate</i>
-                                    </p>
-                                </div>
-
-                                <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle">
-                                    <P class="compact column-gutter text-middle">
-                                        <img src="main/img/usaf.png" class="compact logo-small"></image>
-                                        <b>2022</b>
-                                    </P>
-                                    <p class="compact column-large bordered-left">
-                                        <b>Officership</b>
-                                        <br><a class="fa-solid fa-building-columns icon-small"></a> Squadron 20 • USAF Academy
-                                        <br><i>3.7 MPA
-                                    </p>
-                                </div>
-
-                                <h4>Certifications</h4>
-                                <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
-                                    <p class="compact column-large">
-                                        <b>Sep 2024</b>
-                                        <br>
-                                        CompTIA Security+
-                                    </p>
-                                    <img src="main/img/sec.png" class="compact column-gutter logo-medium"></image>
-                                </div>
-                                <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
-                                    <p class="compact column-large">
-                                        <b>Feb 2024</b>
-                                        <br>CompTIA CySA+
-                                    </p>
-                                    <img src="main/img/cysa.png" class="compact column-gutter logo-medium"></image>
-                                </div>
-                                <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
-                                    <p class="compact column-large">
-                                        <b>Mar 2024</b>
-                                        <br>
-                                        CompTIA Pentest+
-                                    </p>
-                                    <img src="main/img/pent.png" class="compact column-gutter logo-medium"></image>
-                                </div>
-                                <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
-                                    <p class="compact column-large">
-                                        <b>Jul 2024</b>
-                                        <br>CompTIA CASP+
-                                    </p>
-                                    <img src="main/img/casp.png" class="compact column-gutter logo-medium"></image>
-                                </div>
-
-                            </div>
+                        <div
+                            class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
+                            <P class="compact column-gutter text-middle">
+                                <img src="main/img/conjure.png" class="compact logo-small"></image>
+                                <b>Mar 24
+                                    <br>-
+                                    <br>Nov 24</b>
+                            </P>
+                            <p class="compact column-50 bordered-left">
+                                <b>Interim Branch Chief</b><br>
+                                Conjure (Rapid Prototyping) Branch
+                                <a class="fa-solid fa-location-dot icon-small"></a> Scott AFB, IL<br><br>
+                                <i>Leveraged strong communication skills to convey complex concepts across departments.
+                                    Cultivated positive relationships with external stakeholders to enhance potential
+                                    partnerships. Reviewed existing procedures regularly to identify areas for
+                                    improvement or cost reduction. Provided executive leadership and direction to staff,
+                                    developing individual members.</i>
+                            </p>
                         </div>
+
+                        <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle ">
+                            <P class="compact column-gutter text-middle">
+                                <img src="main/img/aia.png" class="compact logo-small"></image>
+                                <b>May 23
+                                    <br>-
+                                    <br>Oct 23</b>
+                            </P>
+                            <p class="compact column-50 bordered-left">
+                                <b>Phantom Program Manager</b><br>
+                                DAF-MIT AI Accelerator
+                                <a class="fa-solid fa-location-dot icon-small"></a> Cambridge, MA<br><br>
+                                <i>Analyzed program performance and identified areas for improvement. Organized and
+                                    facilitated communications between permanent party and phantom fellows. Collaborated
+                                    with executive team to ensure program alignment with organizational objectives.
+                                    Monitored progress against goals, adjusting plans as necessary in order to meet
+                                    requirements.</i>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="column-25 comfy">
+                        <h4>Education</h4>
+                        <div
+                            class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
+                            <P class="compact column-gutter text-middle">
+                                <img src="main/img/wgu.png" class="compact logo-small"></image>
+                                <b>2024</b>
+                            </P>
+                            <p class="compact column-75 bordered-left">
+                                <b>Computer Security & Information Assurance</b>
+                                <br><a class="fa-solid fa-building-columns icon-small"></a> MS • WGU
+                                <br><i>School of Info. Tech.</i>
+                            </p>
+                        </div>
+                        <div class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle">
+                            <P class="compact column-gutter text-middle">
+                                <img src="main/img/usaf.png" class="compact logo-small"></image>
+                                <b>2022</b>
+                            </P>
+                            <p class="compact column-75 bordered-left">
+                                <b>Computer Science</b>
+                                <br><a class="fa-solid fa-building-columns icon-small"></a> BS • USAF Academy
+                                <br><i>3.6 GPA</i>
+                                <br><i>Spanish Minor</i>
+                            </p>
+                        </div>
+                        <h4>Training</h4>
+                        <div
+                            class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
+                            <P class="compact column-gutter text-middle">
+                                <img src="main/img/333.png" class="compact logo-small"></image>
+                                <b>2023</b>
+                            </P>
+                            <p class="compact column-75 bordered-left">
+                                <b>Undergraduate Cyber Warfare Training</b>
+                                <br><a class="fa-solid fa-building-columns icon-small"></a> 333 TRS • Keesler
+                                AFB
+                                <br><i>3.9 GPA - Distinguished Graduate</i>
+                            </p>
+                        </div>
+
+                        <h4>Certifications</h4>
+                        <div
+                            class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
+                            <p class="compact column-75">
+                                <b>Sep 2024</b>
+                                <br>
+                                CompTIA Security+
+                            </p>
+                            <img src="main/img/sec.png" class="compact column-gutter logo-medium"></image>
+                        </div>
+                        <div
+                            class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
+                            <p class="compact column-75">
+                                <b>Feb 2024</b>
+                                <br>CompTIA CySA+
+                            </p>
+                            <img src="main/img/cysa.png" class="compact column-gutter logo-medium"></image>
+                        </div>
+                        <div
+                            class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
+                            <p class="compact column-75">
+                                <b>Mar 2024</b>
+                                <br>
+                                CompTIA Pentest+
+                            </p>
+                            <img src="main/img/pent.png" class="compact column-gutter logo-medium"></image>
+                        </div>
+                        <div
+                            class="bg-dark-opacity-hi rounded bordered compact columns-fixed middle extra-margin-bottom">
+                            <p class="compact column-75">
+                                <b>Jul 2024</b>
+                                <br>CompTIA CASP+
+                            </p>
+                            <img src="main/img/casp.png" class="compact column-gutter logo-medium"></image>
+                        </div>
+
+                        <h4>Clearances</h4>
+                        <div class="bg-dark-opacity-hi rounded bordered compact">
+                            <p class="compact"> Secret cleared, contact for additional information.</p>
+                        </div>
+
                     </div>
                 </div>
-
             </div>
 
         </div>
 
-        <div class="footer compact bg-dark-opacity-hi bordered-top z-top">
-            <span>
-                <button title="Download" class="bg-no square-small rounded bordered" onclick="toPDF()">
-                    <a class="fa-solid fa-download"></a></button>
-                <button title="Print" class="bg-no square-small rounded bordered" onclick="window.print()">
-                    <a class="fa-solid fa-print"></a></button>
-                <button title="Email" class="bg-no square-small rounded bordered">
-                    <a href="mailto:jmcgoldrick2@gmail.com" class="fa-solid fa-envelope"></a>
-                </button>
-                <button title="Call" class="bg-no square-small rounded bordered">
-                    <a href="tel:862-324-256" class="fa-solid fa-phone"></a>
-                </button>
-            </span>
-            <p id="footer-text">
+        </div>
+
+        </div>
+
+        <div id="footer-text" class="footer compact bg-dark-opacity-hi bordered-top z-top">
+            <p>
                 James McGoldrick
                 <a class="fa-solid fa-envelope icon-small"></a>
                 jmcgoldrick2@gmail.com
