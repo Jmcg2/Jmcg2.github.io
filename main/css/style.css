@@ -1,0 +1,284 @@
+:root {
+    --dark-color: #212121;
+    --medium-color: #363636;
+    --light-color: #c4c4c4;
+    --accent-color: #7f9a77;
+    --font-family-heading: Atkinson Hyperlegible Mono, Sans-serif;
+    --font-family-content: Inter, Sans-serif;
+    --font-scale: 1.3rem;
+
+    font-family: var(--font-family-heading);
+    color: var(--light-color);
+}
+
+/* element-level base stylings */
+body {
+    background-color: var(--dark-color);
+    background-image: url("../img/bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+i,
+a {
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+h2 {
+    font-size: calc(1.0 * var(--font-scale));
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    margin: 1rem 0;
+    display: inline-block;
+}
+
+h3 {
+    font-size: calc(0.9 * var(--font-scale));
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+}
+
+h4 {
+    font-size: calc(0.8 * var(--font-scale));
+    font-weight: 400;
+    letter-spacing: 0.11rem;
+    line-height: 2rem;
+    margin: 0;
+    padding-left: 0.75rem;
+}
+
+li,
+p {
+    font-size: calc(0.8 * var(--font-scale));
+    font-weight: 200;
+    line-height: 1.3rem;
+    letter-spacing: 0.1rem;
+    font-family: var(--font-family-content);
+}
+
+li {
+    list-style-type: "";
+}
+
+.no-style{
+    list-style: "";
+}
+
+b, i{
+    font-family: var(--font-family-content);
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+button:hover {
+    transition: filter 0.5s ease-in-out;
+    filter: brightness(140%);
+}
+
+/*class and id styling*/
+
+.bg-light {
+    background-color: var(--light-color);
+}
+
+.bg-dark-opacity-hi {
+    background-color: rgba(from var(--dark-color) r g b / 0.6);
+    backdrop-filter: blur(8px) saturate(200%);
+    -webkit-backdrop-filter: blur(8px) saturate(200%);
+}
+
+.bg-dark-opacity-lo {
+    background-color: rgba(from var(--dark-color) r g b / 0.4);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+}
+
+.bg-no {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.bottom {
+    align-items: flex-end;
+}
+
+.bordered {
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.bordered-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.bordered-left {
+    border-left: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.bordered-top {
+    border-top: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+/*same presets but doesn't resize on smaller screen breakpoint*/
+.columns-fixed{
+    display: flex;
+    flex-direction: row;
+}
+
+.column-gutter{
+    width: 5rem;
+}
+
+.column-xsmall{
+    width: 6rem;
+}
+
+.column-25 {
+    flex: 25%;
+}
+
+.column-75 {
+    flex: 75%;
+}
+
+.column-50 {
+    flex: 45%;
+}
+
+.comfy {
+    padding: 0.75rem;
+    margin: 0.5rem;
+}
+
+.comfy-no-leftright {
+    padding: 1rem 0rem;
+    margin: 0.5rem 0rem;
+}
+
+.compact {
+    padding: 0.3rem 0.5rem;
+    margin: 0.2rem 0.25rem;
+}
+
+.constrain-width {
+  max-width: 1800px;
+  margin: auto;
+}
+
+.extra-margin-bottom {
+    margin-bottom: 10px;
+}
+
+.extra-margin-right{
+    margin-right: 10px;
+}
+
+.footer {
+    position: fixed;
+    width: 100vw;
+    text-align: center;
+    bottom: 0;
+    margin: 0;
+}
+
+#footer-text {
+    display: none;
+}
+
+.icon-small {
+    font-size: 0.8rem;
+    color: var(--accent-color);
+}
+
+.icon-small-disabled {
+    font-size: 0.8rem;
+    color: var(--medium-color);
+} 
+
+.inline{
+    display: inline-block;
+}
+
+.logo-small {
+    display: fixed;
+    width: 3.5rem;
+    margin: 0.25rem;
+}
+
+.logo-medium {
+    display: fixed;
+    width: 5rem;
+    margin: 0.25rem;
+}
+
+.middle {
+    align-items: center;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+}
+
+.page {
+    page-break-after: always;
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+.right {
+    float: right;
+}
+
+#surname {
+    font-weight: 800;
+}
+
+.square-small {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.squish-up {
+    margin-top: -1rem;
+}
+
+.text-middle{
+    text-align: center;
+}
+
+.top {
+    align-items: top;
+}
+
+.z-top {
+    z-index: 1;
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --font-scale: 1.1rem;
+    }
+
+    /*switch to one column on screens that can't comfortably fit all three*/
+    .columns {
+        flex-direction: column;
+    }
+
+    .constrain-width {
+        max-width: 600px;
+    }
+}
