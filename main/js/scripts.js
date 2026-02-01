@@ -2,21 +2,37 @@
 var currentTheme = "dark";
 
 //Download pdf of page when clicked
-function toPDF() {
-    const resume = document.getElementById('resume');
-    const options = {
-        margin: 1,
-        filename: 'Resume_James_McGoldrick.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+function savePDF() {
+    const filename = 'Resume_James_McGoldrick';
+    const filepath = 'Resume_James_McGoldrick.pdf';
+    const link = document.createElement('a');
+
+    link.href = filepath;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    return;
+}
+
+function printPDF(){
+    const iframe = document.createElement('iframe');
+    iframe.style.visibility = 'hidden';
+    iframe.style.position = 'fixed';
+    iframe.style.top = '0';
+    iframe.style.left = '0';
+    iframe.src = 'Resume_James_McGoldrick.pdf';
+    iframe.onload = function () {
+        this.contentWindow.focus();
+        this.contentWindow.print();
     };
-    html2pdf().set(options).from(resume).save();
+    document.body.appendChild(iframe);
     return;
 }
 
 function templateEmail(){
-    const email = "jmcgoldrick2@gmail.com"
+    const email = "jmcgoldrick2@gmail.com";
     const subject = "Resume Inquiry"; //document.getElementById('subject').value;
     const body = "I would like to learn more about you"; //document.getElementById('body').value;
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
