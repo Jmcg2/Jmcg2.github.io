@@ -104,7 +104,7 @@ function toggleDarkMode() {
         root.style.setProperty('--light-color', '#c4c4c4');
         root.style.setProperty('--accent-color', '#7f9a77');
 
-        selector.style.color = 'var(--accent-color)';
+        selector.style.color = 'var(--light-color)';
 
     } else {
         currentThemeDark = false;
@@ -114,7 +114,7 @@ function toggleDarkMode() {
         root.style.setProperty('--light-color', '#1c1c1c');
         root.style.setProperty('--accent-color', '#5a6548');
 
-        selector.style.color = 'var(--light-color)';
+        selector.style.color = 'var(--accent-color)';
     }
 }
 

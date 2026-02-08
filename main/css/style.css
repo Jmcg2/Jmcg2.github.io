@@ -26,8 +26,8 @@ body {
     padding: 0;
 }
 
-i,
-a {
+a,
+i {
     color: var(--light-color);
     text-decoration: none;
 }
@@ -67,7 +67,8 @@ li {
     list-style-type: "";
 }
 
-b, i{
+b,
+i {
     font-family: var(--font-family-content);
 }
 
@@ -83,7 +84,7 @@ button:hover {
     filter: brightness(120%);
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -137,16 +138,16 @@ header{
 }
 
 /*same presets but doesn't resize on smaller screen breakpoint*/
-.columns-fixed{
+.columns-fixed {
     display: flex;
     flex-direction: row;
 }
 
-.column-gutter{
+.column-gutter {
     width: 5rem;
 }
 
-.column-xsmall{
+.column-xsmall {
     width: 6rem;
 }
 
@@ -178,16 +179,16 @@ header{
 }
 
 .constrain-width {
-  max-width: 1800px;
-  margin: auto;
+    max-width: 1800px;
+    margin: auto;
 }
 
 .extra-margin-bottom {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
-.extra-margin-right{
-    margin-right: 10px;
+.extra-margin-right {
+    margin-right: 1rem;
 }
 
 .icon-small {
@@ -198,7 +199,7 @@ header{
 .icon-small-disabled {
     font-size: 0.8rem;
     color: var(--medium-color);
-} 
+}
 
 .inline {
     display: inline-block;
@@ -214,6 +215,14 @@ header{
     display: fixed;
     width: 5rem;
     margin: 0.25rem;
+}
+
+.middle {
+    align-items: center;
+}
+
+.middle-text {
+    text-align: center;
 }
 
 .rounded {
@@ -232,10 +241,6 @@ header{
     height: 2.2rem;
 }
 
-.text-middle{
-    text-align: center;
-}
-
 .top {
     align-items: top;
 }
@@ -251,7 +256,7 @@ header{
     text-align: center;
 }
 
-.typewrite > .wrap { 
+.typewrite>.wrap {
     border-right: 1px solid var(--light-color);
     line-height: 0.8rem;
 }
@@ -262,13 +267,10 @@ header{
 
 /* ID stylings */
 
-#darkModeSelector {
-    color: var(--accent-color);
-}
-
 #footer-text {
     display: none;
     justify-content: space-around;
+    margin-bottom: -0.3rem;
 }
 
 #surname {
@@ -296,8 +298,21 @@ header{
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     :root {
         --font-scale: 0.9rem;
+    }
+
+    .compact {
+        padding: 0.2rem 0.35rem;
+        margin: 0.15rem 0.2rem;
+    }
+
+    .extra-margin-bottom {
+        margin-bottom: 1rem;
+    }
+
+    .extra-margin-right {
+        margin-right: 1rem;
     }
 }
