@@ -63,7 +63,7 @@ p {
     font-family: var(--font-family-content);
 }
 
-li {
+ul {
     list-style-type: "";
 }
 
@@ -184,11 +184,15 @@ header {
 }
 
 .extra-margin-bottom {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .extra-margin-right {
-    margin-right: 1rem;
+    margin-right: 1.2rem;
+}
+
+.extra-margin-left {
+    margin-left: 1.2rem;
 }
 
 .icon-small {
@@ -230,6 +234,7 @@ header {
 }
 
 .section {
+    font-size: calc(0.9 * var(--font-scale));
     line-height: 2rem;
     letter-spacing: 0.25rem;
     margin-left: 0.75rem;
@@ -314,5 +319,9 @@ header {
 
     .extra-margin-right {
         margin-right: 1rem;
+    }
+
+    .extra-margin-left {
+        margin-left: 1rem;
     }
 }
