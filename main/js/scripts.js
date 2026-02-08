@@ -78,7 +78,7 @@ function printPDF() {
 
 function toggleFooter() {
     const footer = document.getElementById('footer-text');
-    const selector = document.getElementById('contactInfoSelector')
+    const selector = document.getElementById('contactInfoSelector');
 
     if (showingFooter) {
         showingFooter = false;

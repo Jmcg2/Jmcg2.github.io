@@ -295,3 +295,9 @@ header{
         display: none;
     }
 }
+
+@media (max-width: 800px) {
+    :root {
+        --font-scale: 0.9rem;
+    }
+}
