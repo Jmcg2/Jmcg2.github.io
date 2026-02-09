@@ -1,24 +1,36 @@
 :root {
-    --dark-color: rgb(33, 33, 33);
-    --medium-color: #363636;
-    --light-color: #c4c4c4;
+    --dark-primary-color: #212121;
+    --dark-medium-color: #363636;
+    --dark-light-color: #c4c4c4;
+    --dark-accent-color: #7f9a77;
+
+    --light-primary-color: #ececec;
+    --light-medium-color: #747474;
+    --light-light-color: #111111;
+    --light-accent-color: #5a6548;
+
+    --primary-color: var(--dark-primary-color);
+    --secondary-color: var(--dark-medium-color);
+    --tertiary-color: var(--dark-light-color);
+    --accent-color: var(--dark-accent-color);
 
     /*this one does not toggle with dark mode*/
     --light-color-fixed: #c4c4c4;
 
-    --accent-color: #7f9a77;
+
+
     --font-family-heading: Atkinson Hyperlegible Mono, Sans-serif;
     --font-family-content: Inter, Sans-serif;
     --font-scale: 1.2rem;
 
     font-family: var(--font-family-heading);
-    color: var(--light-color);
+    color: var(--tertiary-color);
 }
 
 /* element-level base stylings */
 
 body {
-    background-color: var(--dark-color);
+    background-color: var(--primary-color);
     background-image: url("../img/bg.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -28,7 +40,7 @@ body {
 
 a,
 i {
-    color: var(--light-color);
+    color: var(--tertiary-color);
     text-decoration: none;
 }
 
@@ -93,17 +105,17 @@ header {
 /*class styling*/
 
 .bg-light {
-    background-color: var(--light-color);
+    background-color: var(--tertiary-color);
 }
 
 .bg-dark-opacity-hi {
-    background-color: rgba(from var(--dark-color) r g b / 0.6);
+    background-color: rgba(from var(--primary-color) r g b / 0.6);
     backdrop-filter: blur(8px) saturate(200%);
     -webkit-backdrop-filter: blur(8px) saturate(200%);
 }
 
 .bg-dark-opacity-lo {
-    background-color: rgba(from var(--dark-color) r g b / 0.4);
+    background-color: rgba(from var(--primary-color) r g b / 0.4);
     backdrop-filter: blur(10px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
 }
@@ -117,19 +129,19 @@ header {
 }
 
 .bordered {
-    border: 1px solid rgba(from var(--light-color) r g b / 0.125);
+    border: 1px solid rgba(from var(--tertiary-color) r g b / 0.125);
 }
 
 .bordered-bottom {
-    border-bottom: 1px solid rgba(from var(--light-color) r g b / 0.3);
+    border-bottom: 1px solid rgba(from var(--tertiary-color) r g b / 0.3);
 }
 
 .bordered-left {
-    border-left: 1px solid rgba(from var(--light-color) r g b / 0.3);
+    border-left: 1px solid rgba(from var(--tertiary-color) r g b / 0.3);
 }
 
 .bordered-top {
-    border-top: 1px solid rgba(from var(--light-color) r g b / 0.3);
+    border-top: 1px solid rgba(from var(--tertiary-color) r g b / 0.3);
 }
 
 .columns {
@@ -192,7 +204,7 @@ header {
 }
 
 .extra-margin-left {
-    margin-left: 1.2rem;
+    margin-left: 1.4rem;
 }
 
 .icon-small {
@@ -202,7 +214,7 @@ header {
 
 .icon-small-disabled {
     font-size: 0.8rem;
-    color: var(--medium-color);
+    color: var(--secondary-color);
 }
 
 .inline {
@@ -262,7 +274,7 @@ header {
 }
 
 .typewrite>.wrap {
-    border-right: 1px solid var(--light-color);
+    border-right: 1px solid var(--tertiary-color);
     line-height: 0.8rem;
 }
 

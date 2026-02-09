@@ -83,7 +83,7 @@ function toggleFooter() {
     if (showingFooter) {
         showingFooter = false;
         footer.style.display = 'none';
-        selector.style.color = 'var(--light-color)';
+        selector.style.color = 'var(--tertiary-color)';
         
     } else {
         showingFooter = true;
@@ -99,20 +99,20 @@ function toggleDarkMode() {
     if (!currentThemeDark) {
         currentThemeDark = true;
 
-        root.style.setProperty('--dark-color', '#212121');
-        root.style.setProperty('--medium-color', '#363636');
-        root.style.setProperty('--light-color', '#c4c4c4');
-        root.style.setProperty('--accent-color', '#7f9a77');
+        root.style.setProperty('--primary-color', 'var(--dark-primary-color)');
+        root.style.setProperty('--secondary-color', 'var(--dark-medium-color)');
+        root.style.setProperty('--tertiary-color', 'var(--dark-light-color)');
+        root.style.setProperty('--accent-color', 'var(--dark-accent-color)');
 
-        selector.style.color = 'var(--light-color)';
+        selector.style.color = 'var(--tertiary-color)';
 
     } else {
         currentThemeDark = false;
 
-        root.style.setProperty('--dark-color', '#f2f2f2');
-        root.style.setProperty('--medium-color', '#747474');
-        root.style.setProperty('--light-color', '#1c1c1c');
-        root.style.setProperty('--accent-color', '#5a6548');
+        root.style.setProperty('--primary-color', 'var(--light-primary-color)');
+        root.style.setProperty('--secondary-color', 'var(--light-medium-color)');
+        root.style.setProperty('--tertiary-color', 'var(--light-light-color)');
+        root.style.setProperty('--accent-color', 'var(--light-accent-color)');
 
         selector.style.color = 'var(--accent-color)';
     }
