@@ -31,7 +31,7 @@
 
 body {
     background-color: var(--primary-color);
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/bg_horiz.jpg");
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
@@ -313,6 +313,9 @@ header {
     #title {
         display: none;
     }
+
+    body {
+    background-image: url("../img/bg_vert.jpg");}
 }
 
 @media (max-width: 900px) {
