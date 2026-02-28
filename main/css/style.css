@@ -2,17 +2,21 @@
     --dark-primary-color: #212121;
     --dark-medium-color: #474747;
     --dark-light-color: #c4c4c4;
-    --dark-accent-color: #7f9a77;
+    --dark-accent-color: #285fcc;
 
     --light-primary-color: #ececec;
     --light-medium-color: #747474;
     --light-light-color: #111111;
-    --light-accent-color: #5a6548;
+    --light-accent-color: #17397c;
+
+    --bg-light: url("../img/bg_light.jpg");
+    --bg-dark: url("../img/bg_dark.jpg");
 
     --primary-color: var(--dark-primary-color);
     --secondary-color: var(--dark-medium-color);
     --tertiary-color: var(--dark-light-color);
     --accent-color: var(--dark-accent-color);
+    --bg-img-path: var(--bg-dark);
 
     /*this one does not toggle with dark mode*/
     --light-color-fixed: #c4c4c4;
@@ -31,7 +35,7 @@
 
 body {
     background-color: var(--primary-color);
-    background-image: url("../img/bg_horiz.jpg");
+    background-image: var(--bg-img-path);
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
@@ -313,9 +317,6 @@ header {
     #title {
         display: none;
     }
-
-    body {
-    background-image: url("../img/bg_vert.jpg");}
 }
 
 @media (max-width: 900px) {

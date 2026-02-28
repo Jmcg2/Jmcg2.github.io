@@ -103,6 +103,7 @@ function toggleDarkMode() {
         root.style.setProperty('--secondary-color', 'var(--dark-medium-color)');
         root.style.setProperty('--tertiary-color', 'var(--dark-light-color)');
         root.style.setProperty('--accent-color', 'var(--dark-accent-color)');
+        root.style.setProperty('--bg-img-path', 'var(--bg-dark)');
 
         selector.style.color = 'var(--tertiary-color)';
 
@@ -113,6 +114,7 @@ function toggleDarkMode() {
         root.style.setProperty('--secondary-color', 'var(--light-medium-color)');
         root.style.setProperty('--tertiary-color', 'var(--light-light-color)');
         root.style.setProperty('--accent-color', 'var(--light-accent-color)');
+        root.style.setProperty('--bg-img-path', 'var(--bg-light)');
 
         selector.style.color = 'var(--accent-color)';
     }
