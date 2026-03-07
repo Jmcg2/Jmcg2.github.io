@@ -9,9 +9,6 @@
     --light-light-color: #111111;
     --light-accent-color: #17397c;
 
-    --bg-light: url("../img/bg_light.jpg");
-    --bg-dark: url("../img/bg_dark.jpg");
-
     --primary-color: var(--dark-primary-color);
     --secondary-color: var(--dark-medium-color);
     --tertiary-color: var(--dark-light-color);
@@ -35,7 +32,7 @@
 
 body {
     background-color: var(--primary-color);
-    background-image: var(--bg-img-path);
+    background-image: url("../img/bg_horiz.jpg");
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
@@ -300,9 +297,13 @@ header {
 
 /* media-responsiveness for smaller screen sizes */
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
     :root {
         --font-scale: 1.1rem;
+    }
+
+    body {
+        background-image: url("../img/bg_vert.jpg");
     }
 
     /*switch to one column on screens that can't comfortably fit all three*/
@@ -319,7 +320,7 @@ header {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     :root {
         --font-scale: 0.9rem;
     }
