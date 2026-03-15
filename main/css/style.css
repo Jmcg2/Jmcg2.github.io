@@ -162,30 +162,16 @@ header {
     width: 5rem;
 }
 
-.column-xsmall {
-    width: 6rem;
-}
-
 .column-25 {
     flex: 25%;
-}
-
-.column-75 {
-    flex: 75%;
 }
 
 .column-50 {
     flex: 45%;
 }
 
-.comfy {
-    padding: 0.75rem;
-    margin: 0.5rem;
-}
-
-.comfy-no-leftright {
-    padding: 1rem 0rem;
-    margin: 0.5rem 0rem;
+.column-75 {
+    flex: 75%;
 }
 
 .compact {
@@ -200,10 +186,6 @@ header {
 
 .extra-margin-bottom {
     margin-bottom: 1.2rem;
-}
-
-.extra-margin-right {
-    margin-right: 1.2rem;
 }
 
 .extra-margin-left {
@@ -299,7 +281,7 @@ header {
 
 /* media-responsiveness for smaller screen sizes */
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
     :root {
         --font-scale: 1.1rem;
     }
@@ -314,7 +296,7 @@ header {
     }
 
     .constrain-width {
-        max-width: 600px;
+        max-width: 500px;
     }
 
     #title {
@@ -323,24 +305,21 @@ header {
 }
 
 @media (max-width: 800px) {
-    :root {
-        --font-scale: 0.9rem;
-    }
 
     .compact {
         padding: 0.2rem 0.35rem;
         margin: 0.15rem 0.2rem;
     }
 
+    .constrain-width {
+        max-width: 400px;
+    }
+
     .extra-margin-bottom {
         margin-bottom: 1rem;
     }
 
-    .extra-margin-right {
-        margin-right: 1rem;
-    }
-
     .extra-margin-left {
-        margin-left: 1.1rem;
+        margin-left: 1.3rem;
     }
 }
